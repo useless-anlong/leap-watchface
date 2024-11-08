@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Watchface name="跃界" width="336" height="480" id="000000000000" SKU="false" compressMethod="RLEReversed" colorGroupTable="#f0d3ec,#87aed9,#87dbff,#abf5f1,#b0dda7,#ffcf66" editable="true">
+    <Resources>
+        <Image name="Image1" src="_preview/多功能亮屏预览图.png" compressMethod="RLEReversed" format="indexed8"/>
+        <Image name="Image2" src="06a16d9.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec"/>
+        <Image src="2ba900a.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="Image2"/>
+        <Image src="586d948.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="Image2"/>
+        <Image src="7604408.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="Image2"/>
+        <Image src="a3ff005.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="Image2"/>
+        <Image src="3f97d33.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="Image2"/>
+        <Image name="Image3" src="079319c.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec"/>
+        <Image src="296e128.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="Image3"/>
+        <Image src="5e5854c.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="Image3"/>
+        <Image src="5d7f11e.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="Image3"/>
+        <Image src="18ebb06.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="Image3"/>
+        <Image src="416db5e.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="Image3"/>
+        <Image name="Image4" src="6a0a931.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec"/>
+        <Image src="6a0a931.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="Image4"/>
+        <Image src="6a0a931.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="Image4"/>
+        <Image src="6a0a931.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="Image4"/>
+        <Image src="6a0a931.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="Image4"/>
+        <Image src="30528ca.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="Image4"/>
+        <Image name="Image5" src="9c889c6.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec"/>
+        <Image src="9c889c6.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="Image5"/>
+        <Image src="9c889c6.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="Image5"/>
+        <Image src="9c889c6.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="Image5"/>
+        <Image src="9c889c6.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="Image5"/>
+        <Image src="e46599e.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="Image5"/>
+        <Image name="Image6" src="a927f50.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec"/>
+        <Image src="d27928b.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="Image6"/>
+        <Image src="b10dc56.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="Image6"/>
+        <Image src="81c22ed.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="Image6"/>
+        <Image src="ecb2560.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="Image6"/>
+        <Image src="5ca5eca.png" compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="Image6"/>
+        <ImageArray name="ImageArray1" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec">
+            <Image src="sources/340db60.png"/>
+            <Image src="sources/34338f1.png"/>
+            <Image src="sources/6819fad.png"/>
+            <Image src="sources/cf71b49.png"/>
+            <Image src="sources/9037c79.png"/>
+            <Image src="sources/3ccd6e6.png"/>
+            <Image src="sources/d3543c7.png"/>
+            <Image src="sources/c45f8e9.png"/>
+            <Image src="sources/78684f7.png"/>
+            <Image src="sources/13bb881.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="ImageArray1">
+            <Image src="sources/340db60.png"/>
+            <Image src="sources/34338f1.png"/>
+            <Image src="sources/6819fad.png"/>
+            <Image src="sources/cf71b49.png"/>
+            <Image src="sources/9037c79.png"/>
+            <Image src="sources/3ccd6e6.png"/>
+            <Image src="sources/d3543c7.png"/>
+            <Image src="sources/c45f8e9.png"/>
+            <Image src="sources/78684f7.png"/>
+            <Image src="sources/13bb881.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="ImageArray1">
+            <Image src="sources/340db60.png"/>
+            <Image src="sources/34338f1.png"/>
+            <Image src="sources/6819fad.png"/>
+            <Image src="sources/cf71b49.png"/>
+            <Image src="sources/9037c79.png"/>
+            <Image src="sources/3ccd6e6.png"/>
+            <Image src="sources/d3543c7.png"/>
+            <Image src="sources/c45f8e9.png"/>
+            <Image src="sources/78684f7.png"/>
+            <Image src="sources/13bb881.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="ImageArray1">
+            <Image src="sources/340db60.png"/>
+            <Image src="sources/34338f1.png"/>
+            <Image src="sources/6819fad.png"/>
+            <Image src="sources/cf71b49.png"/>
+            <Image src="sources/9037c79.png"/>
+            <Image src="sources/3ccd6e6.png"/>
+            <Image src="sources/d3543c7.png"/>
+            <Image src="sources/c45f8e9.png"/>
+            <Image src="sources/78684f7.png"/>
+            <Image src="sources/13bb881.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="ImageArray1">
+            <Image src="sources/340db60.png"/>
+            <Image src="sources/34338f1.png"/>
+            <Image src="sources/6819fad.png"/>
+            <Image src="sources/cf71b49.png"/>
+            <Image src="sources/9037c79.png"/>
+            <Image src="sources/3ccd6e6.png"/>
+            <Image src="sources/d3543c7.png"/>
+            <Image src="sources/c45f8e9.png"/>
+            <Image src="sources/78684f7.png"/>
+            <Image src="sources/13bb881.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="ImageArray1">
+            <Image src="sources/a7ad6b0.png"/>
+            <Image src="sources/1102bdf.png"/>
+            <Image src="sources/cb7bb7c.png"/>
+            <Image src="sources/ca5c94e.png"/>
+            <Image src="sources/ec9c692.png"/>
+            <Image src="sources/852b1e4.png"/>
+            <Image src="sources/28a4fe1.png"/>
+            <Image src="sources/4542c5e.png"/>
+            <Image src="sources/f1aea4c.png"/>
+            <Image src="sources/985dc91.png"/>
+        </ImageArray>
+        <ImageArray name="ImageArray2" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec">
+            <Image src="sources/25f3d09.png"/>
+            <Image src="sources/41b5645.png"/>
+            <Image src="sources/faf529f.png"/>
+            <Image src="sources/ac1afed.png"/>
+            <Image src="sources/b844c73.png"/>
+            <Image src="sources/f422176.png"/>
+            <Image src="sources/3aa5b9f.png"/>
+            <Image src="sources/feb8a14.png"/>
+            <Image src="sources/6f589dd.png"/>
+            <Image src="sources/88e5543.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="ImageArray2">
+            <Image src="sources/25f3d09.png"/>
+            <Image src="sources/41b5645.png"/>
+            <Image src="sources/faf529f.png"/>
+            <Image src="sources/ac1afed.png"/>
+            <Image src="sources/b844c73.png"/>
+            <Image src="sources/f422176.png"/>
+            <Image src="sources/3aa5b9f.png"/>
+            <Image src="sources/feb8a14.png"/>
+            <Image src="sources/6f589dd.png"/>
+            <Image src="sources/88e5543.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="ImageArray2">
+            <Image src="sources/25f3d09.png"/>
+            <Image src="sources/41b5645.png"/>
+            <Image src="sources/faf529f.png"/>
+            <Image src="sources/ac1afed.png"/>
+            <Image src="sources/b844c73.png"/>
+            <Image src="sources/f422176.png"/>
+            <Image src="sources/3aa5b9f.png"/>
+            <Image src="sources/feb8a14.png"/>
+            <Image src="sources/6f589dd.png"/>
+            <Image src="sources/88e5543.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="ImageArray2">
+            <Image src="sources/25f3d09.png"/>
+            <Image src="sources/41b5645.png"/>
+            <Image src="sources/faf529f.png"/>
+            <Image src="sources/ac1afed.png"/>
+            <Image src="sources/b844c73.png"/>
+            <Image src="sources/f422176.png"/>
+            <Image src="sources/3aa5b9f.png"/>
+            <Image src="sources/feb8a14.png"/>
+            <Image src="sources/6f589dd.png"/>
+            <Image src="sources/88e5543.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="ImageArray2">
+            <Image src="sources/25f3d09.png"/>
+            <Image src="sources/41b5645.png"/>
+            <Image src="sources/faf529f.png"/>
+            <Image src="sources/ac1afed.png"/>
+            <Image src="sources/b844c73.png"/>
+            <Image src="sources/f422176.png"/>
+            <Image src="sources/3aa5b9f.png"/>
+            <Image src="sources/feb8a14.png"/>
+            <Image src="sources/6f589dd.png"/>
+            <Image src="sources/88e5543.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="ImageArray2">
+            <Image src="sources/feff72a.png"/>
+            <Image src="sources/253f973.png"/>
+            <Image src="sources/0a68c55.png"/>
+            <Image src="sources/750b732.png"/>
+            <Image src="sources/56175a2.png"/>
+            <Image src="sources/566f193.png"/>
+            <Image src="sources/f8b28cb.png"/>
+            <Image src="sources/b2b18dd.png"/>
+            <Image src="sources/ac93912.png"/>
+            <Image src="sources/759d266.png"/>
+        </ImageArray>
+        <ImageArray name="ImageArray3" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec">
+            <Image src="sources/6c54b76.png"/>
+            <Image src="sources/6970be3.png"/>
+            <Image src="sources/8857aea.png"/>
+            <Image src="sources/1310191.png"/>
+            <Image src="sources/f92f8e3.png"/>
+            <Image src="sources/5d28a4e.png"/>
+            <Image src="sources/1d48363.png"/>
+            <Image src="sources/234c65a.png"/>
+            <Image src="sources/dd8cca9.png"/>
+            <Image src="sources/3edbef4.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="ImageArray3">
+            <Image src="sources/6c54b76.png"/>
+            <Image src="sources/6970be3.png"/>
+            <Image src="sources/8857aea.png"/>
+            <Image src="sources/1310191.png"/>
+            <Image src="sources/f92f8e3.png"/>
+            <Image src="sources/5d28a4e.png"/>
+            <Image src="sources/1d48363.png"/>
+            <Image src="sources/234c65a.png"/>
+            <Image src="sources/dd8cca9.png"/>
+            <Image src="sources/3edbef4.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="ImageArray3">
+            <Image src="sources/6c54b76.png"/>
+            <Image src="sources/6970be3.png"/>
+            <Image src="sources/8857aea.png"/>
+            <Image src="sources/1310191.png"/>
+            <Image src="sources/f92f8e3.png"/>
+            <Image src="sources/5d28a4e.png"/>
+            <Image src="sources/1d48363.png"/>
+            <Image src="sources/234c65a.png"/>
+            <Image src="sources/dd8cca9.png"/>
+            <Image src="sources/3edbef4.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="ImageArray3">
+            <Image src="sources/6c54b76.png"/>
+            <Image src="sources/6970be3.png"/>
+            <Image src="sources/8857aea.png"/>
+            <Image src="sources/1310191.png"/>
+            <Image src="sources/f92f8e3.png"/>
+            <Image src="sources/5d28a4e.png"/>
+            <Image src="sources/1d48363.png"/>
+            <Image src="sources/234c65a.png"/>
+            <Image src="sources/dd8cca9.png"/>
+            <Image src="sources/3edbef4.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="ImageArray3">
+            <Image src="sources/6c54b76.png"/>
+            <Image src="sources/6970be3.png"/>
+            <Image src="sources/8857aea.png"/>
+            <Image src="sources/1310191.png"/>
+            <Image src="sources/f92f8e3.png"/>
+            <Image src="sources/5d28a4e.png"/>
+            <Image src="sources/1d48363.png"/>
+            <Image src="sources/234c65a.png"/>
+            <Image src="sources/dd8cca9.png"/>
+            <Image src="sources/3edbef4.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="ImageArray3">
+            <Image src="sources/6c54b76.png"/>
+            <Image src="sources/6970be3.png"/>
+            <Image src="sources/8857aea.png"/>
+            <Image src="sources/1310191.png"/>
+            <Image src="sources/f92f8e3.png"/>
+            <Image src="sources/5d28a4e.png"/>
+            <Image src="sources/1d48363.png"/>
+            <Image src="sources/234c65a.png"/>
+            <Image src="sources/dd8cca9.png"/>
+            <Image src="sources/3edbef4.png"/>
+        </ImageArray>
+        <ImageArray name="ImageArray4" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec">
+            <Image src="sources/21445b6.png"/>
+            <Image src="sources/1beb5fe.png"/>
+            <Image src="sources/32d20e3.png"/>
+            <Image src="sources/89cbffb.png"/>
+            <Image src="sources/9c9cc9e.png"/>
+            <Image src="sources/451a8a0.png"/>
+            <Image src="sources/1e08b9d.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="ImageArray4">
+            <Image src="sources/21445b6.png"/>
+            <Image src="sources/1beb5fe.png"/>
+            <Image src="sources/32d20e3.png"/>
+            <Image src="sources/89cbffb.png"/>
+            <Image src="sources/9c9cc9e.png"/>
+            <Image src="sources/451a8a0.png"/>
+            <Image src="sources/1e08b9d.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="ImageArray4">
+            <Image src="sources/21445b6.png"/>
+            <Image src="sources/1beb5fe.png"/>
+            <Image src="sources/32d20e3.png"/>
+            <Image src="sources/89cbffb.png"/>
+            <Image src="sources/9c9cc9e.png"/>
+            <Image src="sources/451a8a0.png"/>
+            <Image src="sources/1e08b9d.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="ImageArray4">
+            <Image src="sources/21445b6.png"/>
+            <Image src="sources/1beb5fe.png"/>
+            <Image src="sources/32d20e3.png"/>
+            <Image src="sources/89cbffb.png"/>
+            <Image src="sources/9c9cc9e.png"/>
+            <Image src="sources/451a8a0.png"/>
+            <Image src="sources/1e08b9d.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="ImageArray4">
+            <Image src="sources/21445b6.png"/>
+            <Image src="sources/1beb5fe.png"/>
+            <Image src="sources/32d20e3.png"/>
+            <Image src="sources/89cbffb.png"/>
+            <Image src="sources/9c9cc9e.png"/>
+            <Image src="sources/451a8a0.png"/>
+            <Image src="sources/1e08b9d.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="ImageArray4">
+            <Image src="sources/21445b6.png"/>
+            <Image src="sources/1beb5fe.png"/>
+            <Image src="sources/32d20e3.png"/>
+            <Image src="sources/89cbffb.png"/>
+            <Image src="sources/9c9cc9e.png"/>
+            <Image src="sources/451a8a0.png"/>
+            <Image src="sources/1e08b9d.png"/>
+        </ImageArray>
+        <ImageArray name="ImageArray5" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec">
+            <Image src="sources/d58d2f8.png"/>
+            <Image src="sources/b55f54f.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="ImageArray5">
+            <Image src="sources/d58d2f8.png"/>
+            <Image src="sources/b55f54f.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="ImageArray5">
+            <Image src="sources/d58d2f8.png"/>
+            <Image src="sources/b55f54f.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="ImageArray5">
+            <Image src="sources/d58d2f8.png"/>
+            <Image src="sources/b55f54f.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="ImageArray5">
+            <Image src="sources/d58d2f8.png"/>
+            <Image src="sources/b55f54f.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="ImageArray5">
+            <Image src="sources/d58d2f8.png"/>
+            <Image src="sources/b55f54f.png"/>
+        </ImageArray>
+        <ImageArray name="ImageArray6" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec">
+            <Image src="sources/b9e6d70.png"/>
+            <Image src="sources/4e96429.png"/>
+            <Image src="sources/c007831.png"/>
+            <Image src="sources/f887dc6.png"/>
+            <Image src="sources/1b8b1aa.png"/>
+            <Image src="sources/fa1d1e5.png"/>
+            <Image src="sources/2bc00b6.png"/>
+            <Image src="sources/00f3519.png"/>
+            <Image src="sources/5b61f44.png"/>
+            <Image src="sources/aae602d.png"/>
+            <Image src="sources/67f15f3.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="ImageArray6">
+            <Image src="sources/b9e6d70.png"/>
+            <Image src="sources/4e96429.png"/>
+            <Image src="sources/c007831.png"/>
+            <Image src="sources/f887dc6.png"/>
+            <Image src="sources/1b8b1aa.png"/>
+            <Image src="sources/fa1d1e5.png"/>
+            <Image src="sources/2bc00b6.png"/>
+            <Image src="sources/00f3519.png"/>
+            <Image src="sources/5b61f44.png"/>
+            <Image src="sources/aae602d.png"/>
+            <Image src="sources/67f15f3.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="ImageArray6">
+            <Image src="sources/b9e6d70.png"/>
+            <Image src="sources/4e96429.png"/>
+            <Image src="sources/c007831.png"/>
+            <Image src="sources/f887dc6.png"/>
+            <Image src="sources/1b8b1aa.png"/>
+            <Image src="sources/fa1d1e5.png"/>
+            <Image src="sources/2bc00b6.png"/>
+            <Image src="sources/00f3519.png"/>
+            <Image src="sources/5b61f44.png"/>
+            <Image src="sources/aae602d.png"/>
+            <Image src="sources/67f15f3.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="ImageArray6">
+            <Image src="sources/b9e6d70.png"/>
+            <Image src="sources/4e96429.png"/>
+            <Image src="sources/c007831.png"/>
+            <Image src="sources/f887dc6.png"/>
+            <Image src="sources/1b8b1aa.png"/>
+            <Image src="sources/fa1d1e5.png"/>
+            <Image src="sources/2bc00b6.png"/>
+            <Image src="sources/00f3519.png"/>
+            <Image src="sources/5b61f44.png"/>
+            <Image src="sources/aae602d.png"/>
+            <Image src="sources/67f15f3.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="ImageArray6">
+            <Image src="sources/b9e6d70.png"/>
+            <Image src="sources/4e96429.png"/>
+            <Image src="sources/c007831.png"/>
+            <Image src="sources/f887dc6.png"/>
+            <Image src="sources/1b8b1aa.png"/>
+            <Image src="sources/fa1d1e5.png"/>
+            <Image src="sources/2bc00b6.png"/>
+            <Image src="sources/00f3519.png"/>
+            <Image src="sources/5b61f44.png"/>
+            <Image src="sources/aae602d.png"/>
+            <Image src="sources/67f15f3.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="ImageArray6">
+            <Image src="sources/b9e6d70.png"/>
+            <Image src="sources/4e96429.png"/>
+            <Image src="sources/c007831.png"/>
+            <Image src="sources/f887dc6.png"/>
+            <Image src="sources/1b8b1aa.png"/>
+            <Image src="sources/fa1d1e5.png"/>
+            <Image src="sources/2bc00b6.png"/>
+            <Image src="sources/00f3519.png"/>
+            <Image src="sources/5b61f44.png"/>
+            <Image src="sources/aae602d.png"/>
+            <Image src="sources/67f15f3.png"/>
+        </ImageArray>
+        <ImageArray name="ImageArray7" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec">
+            <Image src="sources/d8c5921.png"/>
+            <Image src="sources/7edb623.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="ImageArray7">
+            <Image src="sources/d8c5921.png"/>
+            <Image src="sources/73a4ab3.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="ImageArray7">
+            <Image src="sources/d8c5921.png"/>
+            <Image src="sources/e9f7192.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="ImageArray7">
+            <Image src="sources/d8c5921.png"/>
+            <Image src="sources/cf0fb2c.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="ImageArray7">
+            <Image src="sources/d8c5921.png"/>
+            <Image src="sources/b97b665.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="ImageArray7">
+            <Image src="sources/d8c5921.png"/>
+            <Image src="sources/ccde5f0.png"/>
+        </ImageArray>
+        <ImageArray name="ImageArray8" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec">
+            <Image src="sources/2554376.png"/>
+            <Image src="sources/4770b9c.png"/>
+            <Image src="sources/24da695.png"/>
+            <Image src="sources/51f3dab.png"/>
+            <Image src="sources/60c3370.png"/>
+            <Image src="sources/7392742.png"/>
+            <Image src="sources/16649ac.png"/>
+            <Image src="sources/58a16e2.png"/>
+            <Image src="sources/749805b.png"/>
+            <Image src="sources/b7cc82e.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="ImageArray8">
+            <Image src="sources/2554376.png"/>
+            <Image src="sources/4770b9c.png"/>
+            <Image src="sources/24da695.png"/>
+            <Image src="sources/51f3dab.png"/>
+            <Image src="sources/60c3370.png"/>
+            <Image src="sources/7392742.png"/>
+            <Image src="sources/16649ac.png"/>
+            <Image src="sources/58a16e2.png"/>
+            <Image src="sources/749805b.png"/>
+            <Image src="sources/b7cc82e.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="ImageArray8">
+            <Image src="sources/2554376.png"/>
+            <Image src="sources/4770b9c.png"/>
+            <Image src="sources/24da695.png"/>
+            <Image src="sources/51f3dab.png"/>
+            <Image src="sources/60c3370.png"/>
+            <Image src="sources/7392742.png"/>
+            <Image src="sources/16649ac.png"/>
+            <Image src="sources/58a16e2.png"/>
+            <Image src="sources/749805b.png"/>
+            <Image src="sources/b7cc82e.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="ImageArray8">
+            <Image src="sources/2554376.png"/>
+            <Image src="sources/4770b9c.png"/>
+            <Image src="sources/24da695.png"/>
+            <Image src="sources/51f3dab.png"/>
+            <Image src="sources/60c3370.png"/>
+            <Image src="sources/7392742.png"/>
+            <Image src="sources/16649ac.png"/>
+            <Image src="sources/58a16e2.png"/>
+            <Image src="sources/749805b.png"/>
+            <Image src="sources/b7cc82e.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="ImageArray8">
+            <Image src="sources/2554376.png"/>
+            <Image src="sources/4770b9c.png"/>
+            <Image src="sources/24da695.png"/>
+            <Image src="sources/51f3dab.png"/>
+            <Image src="sources/60c3370.png"/>
+            <Image src="sources/7392742.png"/>
+            <Image src="sources/16649ac.png"/>
+            <Image src="sources/58a16e2.png"/>
+            <Image src="sources/749805b.png"/>
+            <Image src="sources/b7cc82e.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="ImageArray8">
+            <Image src="sources/7fd7e5a.png"/>
+            <Image src="sources/6f97911.png"/>
+            <Image src="sources/84f0eaf.png"/>
+            <Image src="sources/3c80bd2.png"/>
+            <Image src="sources/ea2a408.png"/>
+            <Image src="sources/8d407d2.png"/>
+            <Image src="sources/d883acb.png"/>
+            <Image src="sources/054372d.png"/>
+            <Image src="sources/ec2413c.png"/>
+            <Image src="sources/86dd30d.png"/>
+        </ImageArray>
+        <ImageArray name="ImageArray9" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec">
+            <Image src="aod-sources/8d860cc.png"/>
+            <Image src="aod-sources/fb2fb3e.png"/>
+            <Image src="aod-sources/99719a3.png"/>
+            <Image src="aod-sources/a4d6953.png"/>
+            <Image src="aod-sources/36a6ea1.png"/>
+            <Image src="aod-sources/4748ca0.png"/>
+            <Image src="aod-sources/2d20af1.png"/>
+            <Image src="aod-sources/da6d4a0.png"/>
+            <Image src="aod-sources/219adce.png"/>
+            <Image src="aod-sources/34a8769.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="ImageArray9">
+            <Image src="aod-sources/8d860cc.png"/>
+            <Image src="aod-sources/fb2fb3e.png"/>
+            <Image src="aod-sources/99719a3.png"/>
+            <Image src="aod-sources/a4d6953.png"/>
+            <Image src="aod-sources/36a6ea1.png"/>
+            <Image src="aod-sources/4748ca0.png"/>
+            <Image src="aod-sources/2d20af1.png"/>
+            <Image src="aod-sources/da6d4a0.png"/>
+            <Image src="aod-sources/219adce.png"/>
+            <Image src="aod-sources/34a8769.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="ImageArray9">
+            <Image src="aod-sources/8d860cc.png"/>
+            <Image src="aod-sources/fb2fb3e.png"/>
+            <Image src="aod-sources/99719a3.png"/>
+            <Image src="aod-sources/a4d6953.png"/>
+            <Image src="aod-sources/36a6ea1.png"/>
+            <Image src="aod-sources/4748ca0.png"/>
+            <Image src="aod-sources/2d20af1.png"/>
+            <Image src="aod-sources/da6d4a0.png"/>
+            <Image src="aod-sources/219adce.png"/>
+            <Image src="aod-sources/34a8769.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="ImageArray9">
+            <Image src="aod-sources/8d860cc.png"/>
+            <Image src="aod-sources/fb2fb3e.png"/>
+            <Image src="aod-sources/99719a3.png"/>
+            <Image src="aod-sources/a4d6953.png"/>
+            <Image src="aod-sources/36a6ea1.png"/>
+            <Image src="aod-sources/4748ca0.png"/>
+            <Image src="aod-sources/2d20af1.png"/>
+            <Image src="aod-sources/da6d4a0.png"/>
+            <Image src="aod-sources/219adce.png"/>
+            <Image src="aod-sources/34a8769.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="ImageArray9">
+            <Image src="aod-sources/8d860cc.png"/>
+            <Image src="aod-sources/fb2fb3e.png"/>
+            <Image src="aod-sources/99719a3.png"/>
+            <Image src="aod-sources/a4d6953.png"/>
+            <Image src="aod-sources/36a6ea1.png"/>
+            <Image src="aod-sources/4748ca0.png"/>
+            <Image src="aod-sources/2d20af1.png"/>
+            <Image src="aod-sources/da6d4a0.png"/>
+            <Image src="aod-sources/219adce.png"/>
+            <Image src="aod-sources/34a8769.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="ImageArray9">
+            <Image src="aod-sources/8d860cc.png"/>
+            <Image src="aod-sources/fb2fb3e.png"/>
+            <Image src="aod-sources/99719a3.png"/>
+            <Image src="aod-sources/a4d6953.png"/>
+            <Image src="aod-sources/36a6ea1.png"/>
+            <Image src="aod-sources/4748ca0.png"/>
+            <Image src="aod-sources/2d20af1.png"/>
+            <Image src="aod-sources/da6d4a0.png"/>
+            <Image src="aod-sources/219adce.png"/>
+            <Image src="aod-sources/34a8769.png"/>
+        </ImageArray>
+        <ImageArray name="ImageArray10" compressMethod="RLEReversed" format="indexed8" colorGroup="#f0d3ec">
+            <Image src="aod-sources/af2e682.png"/>
+            <Image src="aod-sources/5ab11b8.png"/>
+            <Image src="aod-sources/5e9c10a.png"/>
+            <Image src="aod-sources/6eaa806.png"/>
+            <Image src="aod-sources/7df5034.png"/>
+            <Image src="aod-sources/09087fa.png"/>
+            <Image src="aod-sources/f5c9257.png"/>
+            <Image src="aod-sources/011ab8c.png"/>
+            <Image src="aod-sources/666e4bf.png"/>
+            <Image src="aod-sources/77f26dc.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87aed9" name="ImageArray10">
+            <Image src="aod-sources/af2e682.png"/>
+            <Image src="aod-sources/5ab11b8.png"/>
+            <Image src="aod-sources/5e9c10a.png"/>
+            <Image src="aod-sources/6eaa806.png"/>
+            <Image src="aod-sources/7df5034.png"/>
+            <Image src="aod-sources/09087fa.png"/>
+            <Image src="aod-sources/f5c9257.png"/>
+            <Image src="aod-sources/011ab8c.png"/>
+            <Image src="aod-sources/666e4bf.png"/>
+            <Image src="aod-sources/77f26dc.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#87dbff" name="ImageArray10">
+            <Image src="aod-sources/af2e682.png"/>
+            <Image src="aod-sources/5ab11b8.png"/>
+            <Image src="aod-sources/5e9c10a.png"/>
+            <Image src="aod-sources/6eaa806.png"/>
+            <Image src="aod-sources/7df5034.png"/>
+            <Image src="aod-sources/09087fa.png"/>
+            <Image src="aod-sources/f5c9257.png"/>
+            <Image src="aod-sources/011ab8c.png"/>
+            <Image src="aod-sources/666e4bf.png"/>
+            <Image src="aod-sources/77f26dc.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#abf5f1" name="ImageArray10">
+            <Image src="aod-sources/af2e682.png"/>
+            <Image src="aod-sources/5ab11b8.png"/>
+            <Image src="aod-sources/5e9c10a.png"/>
+            <Image src="aod-sources/6eaa806.png"/>
+            <Image src="aod-sources/7df5034.png"/>
+            <Image src="aod-sources/09087fa.png"/>
+            <Image src="aod-sources/f5c9257.png"/>
+            <Image src="aod-sources/011ab8c.png"/>
+            <Image src="aod-sources/666e4bf.png"/>
+            <Image src="aod-sources/77f26dc.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#b0dda7" name="ImageArray10">
+            <Image src="aod-sources/af2e682.png"/>
+            <Image src="aod-sources/5ab11b8.png"/>
+            <Image src="aod-sources/5e9c10a.png"/>
+            <Image src="aod-sources/6eaa806.png"/>
+            <Image src="aod-sources/7df5034.png"/>
+            <Image src="aod-sources/09087fa.png"/>
+            <Image src="aod-sources/f5c9257.png"/>
+            <Image src="aod-sources/011ab8c.png"/>
+            <Image src="aod-sources/666e4bf.png"/>
+            <Image src="aod-sources/77f26dc.png"/>
+        </ImageArray>
+        <ImageArray compressMethod="RLEReversed" format="indexed8" colorGroup="#ffcf66" name="ImageArray10">
+            <Image src="aod-sources/af2e682.png"/>
+            <Image src="aod-sources/5ab11b8.png"/>
+            <Image src="aod-sources/5e9c10a.png"/>
+            <Image src="aod-sources/6eaa806.png"/>
+            <Image src="aod-sources/7df5034.png"/>
+            <Image src="aod-sources/09087fa.png"/>
+            <Image src="aod-sources/f5c9257.png"/>
+            <Image src="aod-sources/011ab8c.png"/>
+            <Image src="aod-sources/666e4bf.png"/>
+            <Image src="aod-sources/77f26dc.png"/>
+        </ImageArray>
+        <DataItemImageNumber name="ImageNumber1" source="timeHour" ref="@ImageArray1" rotation="0" supportRecolor="false" unitIcon="" leadingZero="true" decimalOffsetX="0" totalDigits="2" decimalDigits="0" trailingZero="false" parameter="1000" renderRule="alwaysShow" align="left" space="0"/>
+        <DataItemImageNumber name="ImageNumber2" source="timeMinute" ref="@ImageArray2" rotation="0" supportRecolor="false" unitIcon="" leadingZero="true" decimalOffsetX="0" totalDigits="2" decimalDigits="0" trailingZero="false" parameter="1000" renderRule="alwaysShow" align="left" space="0"/>
+        <Widget name="Widget1" widgetName="time" groupType="general" w="288" h="288" flex_direction="row" justify_content="center" align_items="center" align_content="center" gap="0">
+            <Item ref="@ImageNumber1"/>
+            <Item ref="@ImageNumber2"/>
+        </Widget>
+        <DataItemImageNumber name="ImageNumber3" source="dateMonth" ref="@ImageArray3" rotation="0" supportRecolor="false" unitIcon="" leadingZero="false" decimalOffsetX="0" totalDigits="2" decimalDigits="0" trailingZero="false" parameter="1000" renderRule="alwaysShow" align="left" space="0"/>
+        <DataItemImageNumber name="ImageNumber4" source="dateDay" ref="@ImageArray3" rotation="0" supportRecolor="false" unitIcon="" leadingZero="false" decimalOffsetX="0" totalDigits="2" decimalDigits="0" trailingZero="false" parameter="1000" renderRule="alwaysShow" align="left" space="0"/>
+        <Widget name="Widget2" widgetName="date" groupType="general" jumpApp="perpetualcalendar" w="95" h="28" flex_direction="row" justify_content="flex-start" align_items="center" align_content="center" gap="2">
+            <Item ref="@ImageNumber3"/>
+            <Item ref="@Image4"/>
+            <Item ref="@ImageNumber4"/>
+        </Widget>
+        <DataItemImageValues name="ImageValues1" source="dateWeek" ref="@ImageArray4" rotation="0" supportRecolor="false"/>
+        <DataItemImageValues name="ImageValues2" source="miscIsPM" ref="@ImageArray5" rotation="0" supportRecolor="false"/>
+        <Widget name="Widget3" widgetName="date" groupType="general" jumpApp="calendar" w="125" h="29" flex_direction="row" justify_content="flex-start" align_items="center" align_content="center" gap="4">
+            <Item ref="@ImageValues1"/>
+            <Item ref="@ImageValues2"/>
+        </Widget>
+        <DataItemImageValues name="ImageValues3" source="systemStatusBattery" ref="@ImageArray6" rotation="0" supportRecolor="false">
+            <Param value="0"/>
+            <Param value="11"/>
+            <Param value="21"/>
+            <Param value="31"/>
+            <Param value="41"/>
+            <Param value="51"/>
+            <Param value="61"/>
+            <Param value="71"/>
+            <Param value="81"/>
+            <Param value="91"/>
+            <Param value="100"/>
+        </DataItemImageValues>
+        <DataItemImageValues name="ImageValues4" source="systemStatusCharge" ref="@ImageArray7" rotation="0" supportRecolor="false"/>
+        <Widget name="Widget4" widgetName="battery" groupType="general" jumpApp="settings" w="44" h="23">
+            <Item ref="@ImageValues3" x="0" y="0"/>
+            <Item ref="@ImageValues4" x="0" y="0"/>
+        </Widget>
+        <Widget name="Widget5" widgetName="content" groupType="general" w="297" h="27" flex_direction="row" justify_content="center" align_items="center" align_content="center" gap="127">
+            <Item ref="@Widget3"/>
+            <Item ref="@Widget4"/>
+        </Widget>
+        <Widget name="Widget6" widgetName="main" groupType="general" w="296" h="59" flex_direction="column" justify_content="flex-start" align_items="flex-start" align_content="flex-start" gap="2">
+            <Item ref="@Widget2"/>
+            <Item ref="@Widget5"/>
+        </Widget>
+        <DataItemImageNumber name="ImageNumber5" source="healthStepCount" ref="@ImageArray8" rotation="0" supportRecolor="false" unitIcon="" leadingZero="false" decimalOffsetX="0" totalDigits="5" decimalDigits="0" trailingZero="false" parameter="1000" renderRule="alwaysShow" align="left" space="0"/>
+        <Widget name="Widget7" widgetName="step" groupType="general" jumpApp="activities" w="113" h="37" flex_direction="row" justify_content="flex-start" align_items="center" align_content="center" gap="8">
+            <Item ref="@Image5"/>
+            <Item ref="@ImageNumber5"/>
+        </Widget>
+        <DataItemImageNumber name="ImageNumber6" source="timeHour" ref="@ImageArray9" rotation="0" supportRecolor="false" unitIcon="" leadingZero="true" decimalOffsetX="0" totalDigits="2" decimalDigits="0" trailingZero="false" parameter="1000" renderRule="alwaysShow" align="left" space="0"/>
+        <DataItemImageNumber name="ImageNumber7" source="timeMinute" ref="@ImageArray10" rotation="0" supportRecolor="false" unitIcon="" leadingZero="true" decimalOffsetX="0" totalDigits="2" decimalDigits="0" trailingZero="false" parameter="1000" renderRule="alwaysShow" align="left" space="0"/>
+        <Widget name="Widget8" widgetName="time" groupType="general" w="288" h="288" flex_direction="row" justify_content="center" align_items="center" align_content="center" gap="0">
+            <Item ref="@ImageNumber6"/>
+            <Item ref="@ImageNumber7"/>
+        </Widget>
+    </Resources>
+    <Theme type="normal" name="多功能" bgColor="#000000" isPhotoAlbumWatchface="false" preview="@Image1" colorGroupTable="#f0d3ec,#87aed9,#87dbff,#abf5f1,#b0dda7,#ffcf66">
+        <Layout ref="@Image2" x="0" y="0"/>
+        <Layout ref="@Widget1" x="24" y="96"/>
+        <Layout ref="@Image3" x="0" y="0"/>
+        <Layout ref="@Widget6" x="20" y="385"/>
+        <Layout ref="@Widget7" x="23" y="32"/>
+    </Theme>
+    <Theme type="AOD" name="多功能" bgColor="#000000" isPhotoAlbumWatchface="false" colorGroupTable="#f0d3ec,#87aed9,#87dbff,#abf5f1,#b0dda7,#ffcf66">
+        <Layout ref="@Widget8" x="24" y="96"/>
+        <Layout ref="@Image6" x="0" y="3"/>
+    </Theme>
+</Watchface>

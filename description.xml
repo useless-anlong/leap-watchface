@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<watch>
+	<shape>square</shape>
+	<name>跃界</name>
+	<deviceType>N67</deviceType>
+	<version>1.2.0</version>
+	<size>336x480</size>
+	<author>AlanYan</author>
+	<pkgName>000000000000</pkgName>
+	<_id>99c354fda2b75db12f3c15392ef1ae86</_id>
+	<imageFormat>indexed8</imageFormat>
+	<imageCompression>true</imageCompression>
+	<editorVersion>1.0.0</editorVersion>
+	<webVersionCreatedAt>2024-10-31T14:24:13+08:00</webVersionCreatedAt>
+	<editorVersionCreatedAt>1.0.0</editorVersionCreatedAt>
+	<webVersionUpdatedAt>2024-10-31T14:24:13+08:00</webVersionUpdatedAt>
+	<editorVersionUpdatedAt>1.0.0</editorVersionUpdatedAt>
+	<imageArrayRamMethod>whole</imageArrayRamMethod>
+	<_recolorEnable>false</_recolorEnable>
+	<webVersionExportAt>2024-10-31T14:24:13+08:00</webVersionExportAt>
+	<editorVersionExportAt>1.0.0</editorVersionExportAt>
+</watch>

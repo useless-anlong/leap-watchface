@@ -1,0 +1,2012 @@
+{
+  "themes": [
+    {
+      "id": "91of8d",
+      "name": "多功能",
+      "type": "normal",
+      "children": [
+        {
+          "id": "wx5ptd",
+          "type": "Image",
+          "attrs": {
+            "sourceEnabled": false,
+            "valueStart": 0,
+            "valueEnd": 0,
+            "angleStart": 0,
+            "angleEnd": 360,
+            "recolorEnable": false,
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 480,
+            "rotation": 0,
+            "name": "background",
+            "showImgFormat": false,
+            "_visibility": true,
+            "_isLocked": false,
+            "temperatureUnitType": "celsius",
+            "pointerFps": 1,
+            "pointerRegionNum": 0,
+            "shadowPointerOffsetY": 0,
+            "resources": {
+              "pointer0": {
+                "b0oxmy": [
+                  "06a16d9.png"
+                ],
+                "v2tl7s": [
+                  "2ba900a.png"
+                ],
+                "glclu8": [
+                  "586d948.png"
+                ],
+                "04rc4b": [
+                  "7604408.png"
+                ],
+                "u5edie": [
+                  "a3ff005.png"
+                ],
+                "hsovqi": [
+                  "3f97d33.png"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "1y10yu",
+          "type": "Widget",
+          "children": [
+            {
+              "id": "m0i2lb",
+              "type": "ImageArray",
+              "attrs": {
+                "sourceEnabled": true,
+                "source": "timeMinute",
+                "valueStart": 0,
+                "valueEnd": 60,
+                "angleStart": 0,
+                "angleEnd": 360,
+                "recolorEnable": false,
+                "x": 144,
+                "y": 0,
+                "w": 76,
+                "h": 304,
+                "rotation": 0,
+                "name": "minutes",
+                "showImgFormat": false,
+                "_visibility": true,
+                "_isLocked": false,
+                "temperatureUnitType": "celsius",
+                "fillType": "数字填充",
+                "align": "left",
+                "space": 0,
+                "widgetSpace": 0,
+                "sourceProgressAccuracy": 10,
+                "sourceWeatherType": "whole",
+                "sourceFormat": 2,
+                "sourceHourMode": "system",
+                "resources": {
+                  "images": {
+                    "b0oxmy": [
+                      "sources/25f3d09.png",
+                      "sources/41b5645.png",
+                      "sources/faf529f.png",
+                      "sources/ac1afed.png",
+                      "sources/b844c73.png",
+                      "sources/f422176.png",
+                      "sources/3aa5b9f.png",
+                      "sources/feb8a14.png",
+                      "sources/6f589dd.png",
+                      "sources/88e5543.png"
+                    ],
+                    "hsovqi": [
+                      "sources/feff72a.png",
+                      "sources/253f973.png",
+                      "sources/0a68c55.png",
+                      "sources/750b732.png",
+                      "sources/56175a2.png",
+                      "sources/566f193.png",
+                      "sources/f8b28cb.png",
+                      "sources/b2b18dd.png",
+                      "sources/ac93912.png",
+                      "sources/759d266.png"
+                    ],
+                    "v2tl7s": [
+                      "sources/25f3d09.png",
+                      "sources/41b5645.png",
+                      "sources/faf529f.png",
+                      "sources/ac1afed.png",
+                      "sources/b844c73.png",
+                      "sources/f422176.png",
+                      "sources/3aa5b9f.png",
+                      "sources/feb8a14.png",
+                      "sources/6f589dd.png",
+                      "sources/88e5543.png"
+                    ],
+                    "glclu8": [
+                      "sources/25f3d09.png",
+                      "sources/41b5645.png",
+                      "sources/faf529f.png",
+                      "sources/ac1afed.png",
+                      "sources/b844c73.png",
+                      "sources/f422176.png",
+                      "sources/3aa5b9f.png",
+                      "sources/feb8a14.png",
+                      "sources/6f589dd.png",
+                      "sources/88e5543.png"
+                    ],
+                    "04rc4b": [
+                      "sources/25f3d09.png",
+                      "sources/41b5645.png",
+                      "sources/faf529f.png",
+                      "sources/ac1afed.png",
+                      "sources/b844c73.png",
+                      "sources/f422176.png",
+                      "sources/3aa5b9f.png",
+                      "sources/feb8a14.png",
+                      "sources/6f589dd.png",
+                      "sources/88e5543.png"
+                    ],
+                    "u5edie": [
+                      "sources/25f3d09.png",
+                      "sources/41b5645.png",
+                      "sources/faf529f.png",
+                      "sources/ac1afed.png",
+                      "sources/b844c73.png",
+                      "sources/f422176.png",
+                      "sources/3aa5b9f.png",
+                      "sources/feb8a14.png",
+                      "sources/6f589dd.png",
+                      "sources/88e5543.png"
+                    ]
+                  }
+                },
+                "decimalOffsetX": "0",
+                "trailingZero": false
+              }
+            },
+            {
+              "id": "km4gfb",
+              "type": "ImageArray",
+              "attrs": {
+                "sourceEnabled": true,
+                "source": "timeHour",
+                "valueStart": 0,
+                "valueEnd": 24,
+                "angleStart": 0,
+                "angleEnd": 360,
+                "recolorEnable": false,
+                "x": 0,
+                "y": 0,
+                "w": 76,
+                "h": 304,
+                "rotation": 0,
+                "name": "hours",
+                "showImgFormat": false,
+                "_visibility": true,
+                "_isLocked": false,
+                "temperatureUnitType": "celsius",
+                "fillType": "数字填充",
+                "align": "left",
+                "space": 0,
+                "widgetSpace": 0,
+                "sourceProgressAccuracy": 10,
+                "sourceWeatherType": "whole",
+                "sourceFormat": 2,
+                "sourceHourMode": "system",
+                "resources": {
+                  "images": {
+                    "b0oxmy": [
+                      "sources/340db60.png",
+                      "sources/34338f1.png",
+                      "sources/6819fad.png",
+                      "sources/cf71b49.png",
+                      "sources/9037c79.png",
+                      "sources/3ccd6e6.png",
+                      "sources/d3543c7.png",
+                      "sources/c45f8e9.png",
+                      "sources/78684f7.png",
+                      "sources/13bb881.png"
+                    ],
+                    "hsovqi": [
+                      "sources/a7ad6b0.png",
+                      "sources/1102bdf.png",
+                      "sources/cb7bb7c.png",
+                      "sources/ca5c94e.png",
+                      "sources/ec9c692.png",
+                      "sources/852b1e4.png",
+                      "sources/28a4fe1.png",
+                      "sources/4542c5e.png",
+                      "sources/f1aea4c.png",
+                      "sources/985dc91.png"
+                    ],
+                    "v2tl7s": [
+                      "sources/340db60.png",
+                      "sources/34338f1.png",
+                      "sources/6819fad.png",
+                      "sources/cf71b49.png",
+                      "sources/9037c79.png",
+                      "sources/3ccd6e6.png",
+                      "sources/d3543c7.png",
+                      "sources/c45f8e9.png",
+                      "sources/78684f7.png",
+                      "sources/13bb881.png"
+                    ],
+                    "glclu8": [
+                      "sources/340db60.png",
+                      "sources/34338f1.png",
+                      "sources/6819fad.png",
+                      "sources/cf71b49.png",
+                      "sources/9037c79.png",
+                      "sources/3ccd6e6.png",
+                      "sources/d3543c7.png",
+                      "sources/c45f8e9.png",
+                      "sources/78684f7.png",
+                      "sources/13bb881.png"
+                    ],
+                    "04rc4b": [
+                      "sources/340db60.png",
+                      "sources/34338f1.png",
+                      "sources/6819fad.png",
+                      "sources/cf71b49.png",
+                      "sources/9037c79.png",
+                      "sources/3ccd6e6.png",
+                      "sources/d3543c7.png",
+                      "sources/c45f8e9.png",
+                      "sources/78684f7.png",
+                      "sources/13bb881.png"
+                    ],
+                    "u5edie": [
+                      "sources/340db60.png",
+                      "sources/34338f1.png",
+                      "sources/6819fad.png",
+                      "sources/cf71b49.png",
+                      "sources/9037c79.png",
+                      "sources/3ccd6e6.png",
+                      "sources/d3543c7.png",
+                      "sources/c45f8e9.png",
+                      "sources/78684f7.png",
+                      "sources/13bb881.png"
+                    ]
+                  }
+                },
+                "decimalOffsetX": "0",
+                "trailingZero": false
+              }
+            }
+          ],
+          "attrs": {
+            "name": "time",
+            "x": 24,
+            "y": 96,
+            "_isLocked": false,
+            "_visibility": true,
+            "w": 288,
+            "h": 288,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "gap": 0,
+            "resources": {}
+          }
+        },
+        {
+          "id": "z0y414",
+          "type": "Image",
+          "attrs": {
+            "sourceEnabled": false,
+            "valueStart": 0,
+            "valueEnd": 0,
+            "angleStart": 0,
+            "angleEnd": 360,
+            "recolorEnable": false,
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 480,
+            "rotation": 0,
+            "name": "mask",
+            "showImgFormat": false,
+            "_visibility": true,
+            "_isLocked": false,
+            "temperatureUnitType": "celsius",
+            "pointerFps": 1,
+            "pointerRegionNum": 0,
+            "shadowPointerOffsetY": 0,
+            "resources": {
+              "pointer0": {
+                "b0oxmy": [
+                  "079319c.png"
+                ],
+                "v2tl7s": [
+                  "296e128.png"
+                ],
+                "glclu8": [
+                  "5e5854c.png"
+                ],
+                "04rc4b": [
+                  "5d7f11e.png"
+                ],
+                "hsovqi": [
+                  "416db5e.png"
+                ],
+                "u5edie": [
+                  "18ebb06.png"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "uxtctz",
+          "type": "Widget",
+          "children": [
+            {
+              "id": "hbmmml",
+              "type": "Widget",
+              "children": [
+                {
+                  "id": "8u680g",
+                  "type": "Widget",
+                  "children": [
+                    {
+                      "id": "80wwbl",
+                      "type": "ImageArray",
+                      "attrs": {
+                        "sourceEnabled": true,
+                        "source": "systemStatusBattery",
+                        "valueStart": 0,
+                        "valueEnd": 100,
+                        "angleStart": 0,
+                        "angleEnd": 360,
+                        "recolorEnable": false,
+                        "x": 0,
+                        "y": 0,
+                        "w": 44,
+                        "h": 23,
+                        "rotation": 0,
+                        "name": "main",
+                        "showImgFormat": false,
+                        "_visibility": true,
+                        "_isLocked": false,
+                        "temperatureUnitType": "celsius",
+                        "fillType": "普通填充",
+                        "align": "left",
+                        "space": 0,
+                        "widgetSpace": 0,
+                        "sourceProgressAccuracy": 10,
+                        "sourceWeatherType": "whole",
+                        "sourceFormat": 1,
+                        "sourceHourMode": "system",
+                        "resources": {
+                          "images": {
+                            "b0oxmy": [
+                              "sources/b9e6d70.png",
+                              "sources/4e96429.png",
+                              "sources/c007831.png",
+                              "sources/f887dc6.png",
+                              "sources/1b8b1aa.png",
+                              "sources/fa1d1e5.png",
+                              "sources/2bc00b6.png",
+                              "sources/00f3519.png",
+                              "sources/5b61f44.png",
+                              "sources/aae602d.png",
+                              "sources/67f15f3.png"
+                            ],
+                            "v2tl7s": [
+                              "sources/b9e6d70.png",
+                              "sources/4e96429.png",
+                              "sources/c007831.png",
+                              "sources/f887dc6.png",
+                              "sources/1b8b1aa.png",
+                              "sources/fa1d1e5.png",
+                              "sources/2bc00b6.png",
+                              "sources/00f3519.png",
+                              "sources/5b61f44.png",
+                              "sources/aae602d.png",
+                              "sources/67f15f3.png"
+                            ],
+                            "glclu8": [
+                              "sources/b9e6d70.png",
+                              "sources/4e96429.png",
+                              "sources/c007831.png",
+                              "sources/f887dc6.png",
+                              "sources/1b8b1aa.png",
+                              "sources/fa1d1e5.png",
+                              "sources/2bc00b6.png",
+                              "sources/00f3519.png",
+                              "sources/5b61f44.png",
+                              "sources/aae602d.png",
+                              "sources/67f15f3.png"
+                            ],
+                            "04rc4b": [
+                              "sources/b9e6d70.png",
+                              "sources/4e96429.png",
+                              "sources/c007831.png",
+                              "sources/f887dc6.png",
+                              "sources/1b8b1aa.png",
+                              "sources/fa1d1e5.png",
+                              "sources/2bc00b6.png",
+                              "sources/00f3519.png",
+                              "sources/5b61f44.png",
+                              "sources/aae602d.png",
+                              "sources/67f15f3.png"
+                            ],
+                            "u5edie": [
+                              "sources/b9e6d70.png",
+                              "sources/4e96429.png",
+                              "sources/c007831.png",
+                              "sources/f887dc6.png",
+                              "sources/1b8b1aa.png",
+                              "sources/fa1d1e5.png",
+                              "sources/2bc00b6.png",
+                              "sources/00f3519.png",
+                              "sources/5b61f44.png",
+                              "sources/aae602d.png",
+                              "sources/67f15f3.png"
+                            ],
+                            "hsovqi": [
+                              "sources/b9e6d70.png",
+                              "sources/4e96429.png",
+                              "sources/c007831.png",
+                              "sources/f887dc6.png",
+                              "sources/1b8b1aa.png",
+                              "sources/fa1d1e5.png",
+                              "sources/2bc00b6.png",
+                              "sources/00f3519.png",
+                              "sources/5b61f44.png",
+                              "sources/aae602d.png",
+                              "sources/67f15f3.png"
+                            ]
+                          }
+                        },
+                        "decimalOffsetX": "0",
+                        "trailingZero": false
+                      }
+                    },
+                    {
+                      "id": "qliabo",
+                      "type": "ImageArray",
+                      "attrs": {
+                        "sourceEnabled": true,
+                        "source": "systemStatusCharge",
+                        "valueStart": 0,
+                        "valueEnd": 1,
+                        "angleStart": 0,
+                        "angleEnd": 360,
+                        "recolorEnable": false,
+                        "x": 0,
+                        "y": 0,
+                        "w": 44,
+                        "h": 23,
+                        "rotation": 0,
+                        "name": "charging",
+                        "showImgFormat": false,
+                        "_visibility": true,
+                        "_isLocked": false,
+                        "temperatureUnitType": "celsius",
+                        "fillType": "普通填充",
+                        "align": "left",
+                        "space": 0,
+                        "widgetSpace": 0,
+                        "sourceProgressAccuracy": 10,
+                        "sourceWeatherType": "whole",
+                        "sourceHourMode": "system",
+                        "resources": {
+                          "images": {
+                            "b0oxmy": [
+                              "sources/d8c5921.png",
+                              "sources/7edb623.png"
+                            ],
+                            "hsovqi": [
+                              "sources/d8c5921.png",
+                              "sources/ccde5f0.png"
+                            ],
+                            "u5edie": [
+                              "sources/d8c5921.png",
+                              "sources/b97b665.png"
+                            ],
+                            "v2tl7s": [
+                              "sources/d8c5921.png",
+                              "sources/73a4ab3.png"
+                            ],
+                            "glclu8": [
+                              "sources/d8c5921.png",
+                              "sources/e9f7192.png"
+                            ],
+                            "04rc4b": [
+                              "sources/d8c5921.png",
+                              "sources/cf0fb2c.png"
+                            ]
+                          }
+                        },
+                        "decimalOffsetX": "0",
+                        "trailingZero": false
+                      }
+                    }
+                  ],
+                  "attrs": {
+                    "name": "battery",
+                    "x": 232,
+                    "y": -380,
+                    "_isLocked": false,
+                    "_visibility": true,
+                    "w": 44,
+                    "h": 23,
+                    "jumpApp": "settings",
+                    "resources": {},
+                    "flexDirection": "disabled",
+                    "justifyContent": "flex-start",
+                    "alignItems": "flex-start",
+                    "gap": 0
+                  }
+                },
+                {
+                  "id": "89qzxu",
+                  "type": "Widget",
+                  "children": [
+                    {
+                      "id": "yadqca",
+                      "type": "ImageArray",
+                      "attrs": {
+                        "sourceEnabled": true,
+                        "source": "miscIsPM",
+                        "valueStart": 0,
+                        "valueEnd": 1,
+                        "angleStart": 0,
+                        "angleEnd": 360,
+                        "recolorEnable": false,
+                        "x": 48,
+                        "y": 5,
+                        "w": 44,
+                        "h": 21,
+                        "rotation": 0,
+                        "name": "ampm",
+                        "showImgFormat": false,
+                        "_visibility": true,
+                        "_isLocked": false,
+                        "temperatureUnitType": "celsius",
+                        "fillType": "普通填充",
+                        "align": "left",
+                        "space": 0,
+                        "widgetSpace": 0,
+                        "sourceProgressAccuracy": 10,
+                        "sourceWeatherType": "whole",
+                        "sourceHourMode": "system",
+                        "resources": {
+                          "images": {
+                            "b0oxmy": [
+                              "sources/d58d2f8.png",
+                              "sources/b55f54f.png"
+                            ],
+                            "v2tl7s": [
+                              "sources/d58d2f8.png",
+                              "sources/b55f54f.png"
+                            ],
+                            "glclu8": [
+                              "sources/d58d2f8.png",
+                              "sources/b55f54f.png"
+                            ],
+                            "04rc4b": [
+                              "sources/d58d2f8.png",
+                              "sources/b55f54f.png"
+                            ],
+                            "u5edie": [
+                              "sources/d58d2f8.png",
+                              "sources/b55f54f.png"
+                            ],
+                            "hsovqi": [
+                              "sources/d58d2f8.png",
+                              "sources/b55f54f.png"
+                            ]
+                          }
+                        },
+                        "decimalOffsetX": "0",
+                        "trailingZero": false
+                      }
+                    },
+                    {
+                      "id": "uroiz8",
+                      "type": "ImageArray",
+                      "attrs": {
+                        "sourceEnabled": true,
+                        "source": "dateWeek",
+                        "valueStart": 0,
+                        "valueEnd": 6,
+                        "angleStart": 0,
+                        "angleEnd": 360,
+                        "recolorEnable": false,
+                        "x": 0,
+                        "y": 4,
+                        "w": 46,
+                        "h": 29,
+                        "rotation": 0,
+                        "name": "week",
+                        "showImgFormat": false,
+                        "_visibility": true,
+                        "_isLocked": false,
+                        "temperatureUnitType": "celsius",
+                        "fillType": "普通填充",
+                        "align": "left",
+                        "space": 0,
+                        "widgetSpace": 0,
+                        "sourceProgressAccuracy": 10,
+                        "sourceWeatherType": "whole",
+                        "sourceHourMode": "system",
+                        "resources": {
+                          "images": {
+                            "b0oxmy": [
+                              "sources/21445b6.png",
+                              "sources/1beb5fe.png",
+                              "sources/32d20e3.png",
+                              "sources/89cbffb.png",
+                              "sources/9c9cc9e.png",
+                              "sources/451a8a0.png",
+                              "sources/1e08b9d.png"
+                            ],
+                            "v2tl7s": [
+                              "sources/21445b6.png",
+                              "sources/1beb5fe.png",
+                              "sources/32d20e3.png",
+                              "sources/89cbffb.png",
+                              "sources/9c9cc9e.png",
+                              "sources/451a8a0.png",
+                              "sources/1e08b9d.png"
+                            ],
+                            "glclu8": [
+                              "sources/21445b6.png",
+                              "sources/1beb5fe.png",
+                              "sources/32d20e3.png",
+                              "sources/89cbffb.png",
+                              "sources/9c9cc9e.png",
+                              "sources/451a8a0.png",
+                              "sources/1e08b9d.png"
+                            ],
+                            "04rc4b": [
+                              "sources/21445b6.png",
+                              "sources/1beb5fe.png",
+                              "sources/32d20e3.png",
+                              "sources/89cbffb.png",
+                              "sources/9c9cc9e.png",
+                              "sources/451a8a0.png",
+                              "sources/1e08b9d.png"
+                            ],
+                            "u5edie": [
+                              "sources/21445b6.png",
+                              "sources/1beb5fe.png",
+                              "sources/32d20e3.png",
+                              "sources/89cbffb.png",
+                              "sources/9c9cc9e.png",
+                              "sources/451a8a0.png",
+                              "sources/1e08b9d.png"
+                            ],
+                            "hsovqi": [
+                              "sources/21445b6.png",
+                              "sources/1beb5fe.png",
+                              "sources/32d20e3.png",
+                              "sources/89cbffb.png",
+                              "sources/9c9cc9e.png",
+                              "sources/451a8a0.png",
+                              "sources/1e08b9d.png"
+                            ]
+                          }
+                        },
+                        "decimalOffsetX": "0",
+                        "trailingZero": false
+                      }
+                    }
+                  ],
+                  "attrs": {
+                    "name": "date",
+                    "x": -2,
+                    "y": -1,
+                    "_isLocked": false,
+                    "_visibility": true,
+                    "w": 125,
+                    "h": 29,
+                    "flexDirection": "row",
+                    "justifyContent": "flex-start",
+                    "alignItems": "center",
+                    "gap": 4,
+                    "resources": {},
+                    "jumpApp": "calendar"
+                  }
+                }
+              ],
+              "attrs": {
+                "name": "content",
+                "x": 0,
+                "y": 28,
+                "_isLocked": false,
+                "_visibility": true,
+                "w": 297,
+                "h": 27,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "gap": 127
+              }
+            },
+            {
+              "id": "x1oigu",
+              "type": "Widget",
+              "children": [
+                {
+                  "id": "r4co1g",
+                  "type": "ImageArray",
+                  "attrs": {
+                    "sourceEnabled": true,
+                    "source": "dateDay",
+                    "valueStart": 1,
+                    "valueEnd": 31,
+                    "angleStart": 0,
+                    "angleEnd": 360,
+                    "recolorEnable": false,
+                    "x": 0,
+                    "y": 0,
+                    "w": 15,
+                    "h": 29,
+                    "rotation": 0,
+                    "name": "day",
+                    "showImgFormat": false,
+                    "_visibility": true,
+                    "_isLocked": false,
+                    "temperatureUnitType": "celsius",
+                    "fillType": "数字填充",
+                    "align": "left",
+                    "space": 0,
+                    "widgetSpace": 0,
+                    "sourceProgressAccuracy": 10,
+                    "sourceWeatherType": "whole",
+                    "sourceFormat": 1,
+                    "sourceHourMode": "system",
+                    "resources": {
+                      "images": {
+                        "b0oxmy": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ],
+                        "v2tl7s": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ],
+                        "glclu8": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ],
+                        "04rc4b": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ],
+                        "u5edie": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ],
+                        "hsovqi": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ]
+                      }
+                    },
+                    "decimalOffsetX": "0",
+                    "trailingZero": false
+                  }
+                },
+                {
+                  "id": "q67ti8",
+                  "type": "Image",
+                  "attrs": {
+                    "sourceEnabled": false,
+                    "valueStart": 0,
+                    "valueEnd": 0,
+                    "angleStart": 0,
+                    "angleEnd": 360,
+                    "recolorEnable": false,
+                    "x": 0,
+                    "y": 0,
+                    "w": 15,
+                    "h": 29,
+                    "rotation": 0,
+                    "name": "slash",
+                    "showImgFormat": false,
+                    "_visibility": true,
+                    "_isLocked": false,
+                    "temperatureUnitType": "celsius",
+                    "pointerFps": 1,
+                    "pointerRegionNum": 0,
+                    "shadowPointerOffsetY": 0,
+                    "resources": {
+                      "pointer0": {
+                        "b0oxmy": [
+                          "6a0a931.png"
+                        ],
+                        "v2tl7s": [
+                          "6a0a931.png"
+                        ],
+                        "glclu8": [
+                          "6a0a931.png"
+                        ],
+                        "04rc4b": [
+                          "6a0a931.png"
+                        ],
+                        "u5edie": [
+                          "6a0a931.png"
+                        ],
+                        "hsovqi": [
+                          "30528ca.png"
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "h6nyxo",
+                  "type": "ImageArray",
+                  "attrs": {
+                    "sourceEnabled": true,
+                    "source": "dateMonth",
+                    "valueStart": 1,
+                    "valueEnd": 12,
+                    "angleStart": 0,
+                    "angleEnd": 360,
+                    "recolorEnable": false,
+                    "x": 0,
+                    "y": -1,
+                    "w": 15,
+                    "h": 29,
+                    "rotation": 0,
+                    "name": "month",
+                    "showImgFormat": false,
+                    "_visibility": true,
+                    "_isLocked": false,
+                    "temperatureUnitType": "celsius",
+                    "fillType": "数字填充",
+                    "align": "left",
+                    "space": 0,
+                    "widgetSpace": 0,
+                    "sourceProgressAccuracy": 10,
+                    "sourceWeatherType": "whole",
+                    "sourceFormat": 1,
+                    "sourceHourMode": "system",
+                    "resources": {
+                      "images": {
+                        "b0oxmy": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ],
+                        "v2tl7s": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ],
+                        "glclu8": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ],
+                        "04rc4b": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ],
+                        "u5edie": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ],
+                        "hsovqi": [
+                          "sources/6c54b76.png",
+                          "sources/6970be3.png",
+                          "sources/8857aea.png",
+                          "sources/1310191.png",
+                          "sources/f92f8e3.png",
+                          "sources/5d28a4e.png",
+                          "sources/1d48363.png",
+                          "sources/234c65a.png",
+                          "sources/dd8cca9.png",
+                          "sources/3edbef4.png"
+                        ]
+                      }
+                    },
+                    "decimalOffsetX": "0",
+                    "trailingZero": false
+                  }
+                }
+              ],
+              "attrs": {
+                "name": "date",
+                "x": 102,
+                "y": -4,
+                "_isLocked": false,
+                "_visibility": true,
+                "w": 95,
+                "h": 28,
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "alignItems": "center",
+                "gap": 2,
+                "jumpApp": "perpetualcalendar"
+              }
+            }
+          ],
+          "attrs": {
+            "name": "main",
+            "x": 20,
+            "y": 385,
+            "_isLocked": false,
+            "_visibility": true,
+            "w": 296,
+            "h": 59,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start",
+            "gap": 2,
+            "resources": {}
+          }
+        },
+        {
+          "id": "8ekmyq",
+          "type": "Widget",
+          "children": [
+            {
+              "id": "v8vz59",
+              "type": "ImageArray",
+              "attrs": {
+                "sourceEnabled": true,
+                "source": "healthStepCount",
+                "valueStart": 0,
+                "valueEnd": "healthStepTarget",
+                "angleStart": 0,
+                "angleEnd": 360,
+                "recolorEnable": false,
+                "x": -14,
+                "y": 4,
+                "w": 15,
+                "h": 29,
+                "rotation": 0,
+                "name": "step-number",
+                "showImgFormat": false,
+                "_visibility": true,
+                "_isLocked": false,
+                "temperatureUnitType": "celsius",
+                "fillType": "数字填充",
+                "align": "left",
+                "space": 0,
+                "widgetSpace": 0,
+                "sourceProgressAccuracy": 10,
+                "sourceWeatherType": "whole",
+                "sourceFormat": 1,
+                "sourceHourMode": "system",
+                "resources": {
+                  "images": {
+                    "b0oxmy": [
+                      "sources/2554376.png",
+                      "sources/4770b9c.png",
+                      "sources/24da695.png",
+                      "sources/51f3dab.png",
+                      "sources/60c3370.png",
+                      "sources/7392742.png",
+                      "sources/16649ac.png",
+                      "sources/58a16e2.png",
+                      "sources/749805b.png",
+                      "sources/b7cc82e.png"
+                    ],
+                    "hsovqi": [
+                      "sources/7fd7e5a.png",
+                      "sources/6f97911.png",
+                      "sources/84f0eaf.png",
+                      "sources/3c80bd2.png",
+                      "sources/ea2a408.png",
+                      "sources/8d407d2.png",
+                      "sources/d883acb.png",
+                      "sources/054372d.png",
+                      "sources/ec2413c.png",
+                      "sources/86dd30d.png"
+                    ],
+                    "v2tl7s": [
+                      "sources/2554376.png",
+                      "sources/4770b9c.png",
+                      "sources/24da695.png",
+                      "sources/51f3dab.png",
+                      "sources/60c3370.png",
+                      "sources/7392742.png",
+                      "sources/16649ac.png",
+                      "sources/58a16e2.png",
+                      "sources/749805b.png",
+                      "sources/b7cc82e.png"
+                    ],
+                    "glclu8": [
+                      "sources/2554376.png",
+                      "sources/4770b9c.png",
+                      "sources/24da695.png",
+                      "sources/51f3dab.png",
+                      "sources/60c3370.png",
+                      "sources/7392742.png",
+                      "sources/16649ac.png",
+                      "sources/58a16e2.png",
+                      "sources/749805b.png",
+                      "sources/b7cc82e.png"
+                    ],
+                    "04rc4b": [
+                      "sources/2554376.png",
+                      "sources/4770b9c.png",
+                      "sources/24da695.png",
+                      "sources/51f3dab.png",
+                      "sources/60c3370.png",
+                      "sources/7392742.png",
+                      "sources/16649ac.png",
+                      "sources/58a16e2.png",
+                      "sources/749805b.png",
+                      "sources/b7cc82e.png"
+                    ],
+                    "u5edie": [
+                      "sources/2554376.png",
+                      "sources/4770b9c.png",
+                      "sources/24da695.png",
+                      "sources/51f3dab.png",
+                      "sources/60c3370.png",
+                      "sources/7392742.png",
+                      "sources/16649ac.png",
+                      "sources/58a16e2.png",
+                      "sources/749805b.png",
+                      "sources/b7cc82e.png"
+                    ]
+                  }
+                },
+                "decimalOffsetX": "0",
+                "trailingZero": false
+              }
+            },
+            {
+              "id": "4vl5kl",
+              "type": "Image",
+              "attrs": {
+                "sourceEnabled": false,
+                "valueStart": 0,
+                "valueEnd": 0,
+                "angleStart": 0,
+                "angleEnd": 360,
+                "recolorEnable": false,
+                "x": 45,
+                "y": 0,
+                "w": 22,
+                "h": 22,
+                "rotation": 0,
+                "name": "step-icon",
+                "showImgFormat": false,
+                "_visibility": true,
+                "_isLocked": false,
+                "temperatureUnitType": "celsius",
+                "pointerFps": 1,
+                "pointerRegionNum": 0,
+                "shadowPointerOffsetY": 0,
+                "resources": {
+                  "pointer0": {
+                    "b0oxmy": [
+                      "9c889c6.png"
+                    ],
+                    "hsovqi": [
+                      "e46599e.png"
+                    ],
+                    "v2tl7s": [
+                      "9c889c6.png"
+                    ],
+                    "glclu8": [
+                      "9c889c6.png"
+                    ],
+                    "04rc4b": [
+                      "9c889c6.png"
+                    ],
+                    "u5edie": [
+                      "9c889c6.png"
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "attrs": {
+            "name": "step",
+            "x": 23,
+            "y": 32,
+            "_isLocked": false,
+            "_visibility": true,
+            "w": 113,
+            "h": 37,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "alignItems": "center",
+            "gap": 8,
+            "resources": {},
+            "jumpApp": "activities"
+          }
+        }
+      ],
+      "bgColor": "#000000",
+      "colorGroupTable": [
+        {
+          "id": "b0oxmy",
+          "name": "山峰",
+          "color": "#f0d3ec"
+        },
+        {
+          "name": "深林",
+          "id": "v2tl7s",
+          "color": "#87aed9"
+        },
+        {
+          "name": "雪山",
+          "id": "glclu8",
+          "color": "#87dbff"
+        },
+        {
+          "name": "建筑",
+          "id": "04rc4b",
+          "color": "#abf5f1"
+        },
+        {
+          "name": "极光",
+          "id": "u5edie",
+          "color": "#b0dda7"
+        },
+        {
+          "name": "清雾",
+          "id": "hsovqi",
+          "color": "#ffcf66"
+        }
+      ],
+      "preview": "_preview/多功能亮屏预览图.png"
+    },
+    {
+      "id": "2vtxdc",
+      "name": "多功能",
+      "type": "AOD",
+      "children": [
+        {
+          "id": "ux0e98",
+          "type": "Widget",
+          "children": [
+            {
+              "id": "expa7e",
+              "type": "ImageArray",
+              "attrs": {
+                "sourceEnabled": true,
+                "source": "timeMinute",
+                "valueStart": 0,
+                "valueEnd": 60,
+                "angleStart": 0,
+                "angleEnd": 360,
+                "recolorEnable": false,
+                "x": 144,
+                "y": 0,
+                "w": 76,
+                "h": 304,
+                "rotation": 0,
+                "name": "minutes",
+                "showImgFormat": false,
+                "_visibility": true,
+                "_isLocked": false,
+                "temperatureUnitType": "celsius",
+                "fillType": "数字填充",
+                "align": "left",
+                "space": 0,
+                "widgetSpace": 0,
+                "sourceProgressAccuracy": 10,
+                "sourceWeatherType": "whole",
+                "sourceFormat": 2,
+                "sourceHourMode": "system",
+                "resources": {
+                  "images": {
+                    "ydwxwv": [
+                      "aod-sources/af2e682.png",
+                      "aod-sources/5ab11b8.png",
+                      "aod-sources/5e9c10a.png",
+                      "aod-sources/6eaa806.png",
+                      "aod-sources/7df5034.png",
+                      "aod-sources/09087fa.png",
+                      "aod-sources/f5c9257.png",
+                      "aod-sources/011ab8c.png",
+                      "aod-sources/666e4bf.png",
+                      "aod-sources/77f26dc.png"
+                    ],
+                    "8c5y8q": [
+                      "aod-sources/af2e682.png",
+                      "aod-sources/5ab11b8.png",
+                      "aod-sources/5e9c10a.png",
+                      "aod-sources/6eaa806.png",
+                      "aod-sources/7df5034.png",
+                      "aod-sources/09087fa.png",
+                      "aod-sources/f5c9257.png",
+                      "aod-sources/011ab8c.png",
+                      "aod-sources/666e4bf.png",
+                      "aod-sources/77f26dc.png"
+                    ],
+                    "gb4czu": [
+                      "aod-sources/af2e682.png",
+                      "aod-sources/5ab11b8.png",
+                      "aod-sources/5e9c10a.png",
+                      "aod-sources/6eaa806.png",
+                      "aod-sources/7df5034.png",
+                      "aod-sources/09087fa.png",
+                      "aod-sources/f5c9257.png",
+                      "aod-sources/011ab8c.png",
+                      "aod-sources/666e4bf.png",
+                      "aod-sources/77f26dc.png"
+                    ],
+                    "97v74a": [
+                      "aod-sources/af2e682.png",
+                      "aod-sources/5ab11b8.png",
+                      "aod-sources/5e9c10a.png",
+                      "aod-sources/6eaa806.png",
+                      "aod-sources/7df5034.png",
+                      "aod-sources/09087fa.png",
+                      "aod-sources/f5c9257.png",
+                      "aod-sources/011ab8c.png",
+                      "aod-sources/666e4bf.png",
+                      "aod-sources/77f26dc.png"
+                    ],
+                    "xhb8gm": [
+                      "aod-sources/af2e682.png",
+                      "aod-sources/5ab11b8.png",
+                      "aod-sources/5e9c10a.png",
+                      "aod-sources/6eaa806.png",
+                      "aod-sources/7df5034.png",
+                      "aod-sources/09087fa.png",
+                      "aod-sources/f5c9257.png",
+                      "aod-sources/011ab8c.png",
+                      "aod-sources/666e4bf.png",
+                      "aod-sources/77f26dc.png"
+                    ],
+                    "5n7jti": [
+                      "aod-sources/af2e682.png",
+                      "aod-sources/5ab11b8.png",
+                      "aod-sources/5e9c10a.png",
+                      "aod-sources/6eaa806.png",
+                      "aod-sources/7df5034.png",
+                      "aod-sources/09087fa.png",
+                      "aod-sources/f5c9257.png",
+                      "aod-sources/011ab8c.png",
+                      "aod-sources/666e4bf.png",
+                      "aod-sources/77f26dc.png"
+                    ]
+                  }
+                },
+                "decimalOffsetX": "0",
+                "trailingZero": false
+              }
+            },
+            {
+              "id": "guvm8g",
+              "type": "ImageArray",
+              "attrs": {
+                "sourceEnabled": true,
+                "source": "timeHour",
+                "valueStart": 0,
+                "valueEnd": 24,
+                "angleStart": 0,
+                "angleEnd": 360,
+                "recolorEnable": false,
+                "x": 0,
+                "y": 0,
+                "w": 76,
+                "h": 304,
+                "rotation": 0,
+                "name": "hours",
+                "showImgFormat": false,
+                "_visibility": true,
+                "_isLocked": false,
+                "temperatureUnitType": "celsius",
+                "fillType": "数字填充",
+                "align": "left",
+                "space": 0,
+                "widgetSpace": 0,
+                "sourceProgressAccuracy": 10,
+                "sourceWeatherType": "whole",
+                "sourceFormat": 2,
+                "sourceHourMode": "system",
+                "resources": {
+                  "images": {
+                    "ydwxwv": [
+                      "aod-sources/8d860cc.png",
+                      "aod-sources/fb2fb3e.png",
+                      "aod-sources/99719a3.png",
+                      "aod-sources/a4d6953.png",
+                      "aod-sources/36a6ea1.png",
+                      "aod-sources/4748ca0.png",
+                      "aod-sources/2d20af1.png",
+                      "aod-sources/da6d4a0.png",
+                      "aod-sources/219adce.png",
+                      "aod-sources/34a8769.png"
+                    ],
+                    "8c5y8q": [
+                      "aod-sources/8d860cc.png",
+                      "aod-sources/fb2fb3e.png",
+                      "aod-sources/99719a3.png",
+                      "aod-sources/a4d6953.png",
+                      "aod-sources/36a6ea1.png",
+                      "aod-sources/4748ca0.png",
+                      "aod-sources/2d20af1.png",
+                      "aod-sources/da6d4a0.png",
+                      "aod-sources/219adce.png",
+                      "aod-sources/34a8769.png"
+                    ],
+                    "gb4czu": [
+                      "aod-sources/8d860cc.png",
+                      "aod-sources/fb2fb3e.png",
+                      "aod-sources/99719a3.png",
+                      "aod-sources/a4d6953.png",
+                      "aod-sources/36a6ea1.png",
+                      "aod-sources/4748ca0.png",
+                      "aod-sources/2d20af1.png",
+                      "aod-sources/da6d4a0.png",
+                      "aod-sources/219adce.png",
+                      "aod-sources/34a8769.png"
+                    ],
+                    "97v74a": [
+                      "aod-sources/8d860cc.png",
+                      "aod-sources/fb2fb3e.png",
+                      "aod-sources/99719a3.png",
+                      "aod-sources/a4d6953.png",
+                      "aod-sources/36a6ea1.png",
+                      "aod-sources/4748ca0.png",
+                      "aod-sources/2d20af1.png",
+                      "aod-sources/da6d4a0.png",
+                      "aod-sources/219adce.png",
+                      "aod-sources/34a8769.png"
+                    ],
+                    "xhb8gm": [
+                      "aod-sources/8d860cc.png",
+                      "aod-sources/fb2fb3e.png",
+                      "aod-sources/99719a3.png",
+                      "aod-sources/a4d6953.png",
+                      "aod-sources/36a6ea1.png",
+                      "aod-sources/4748ca0.png",
+                      "aod-sources/2d20af1.png",
+                      "aod-sources/da6d4a0.png",
+                      "aod-sources/219adce.png",
+                      "aod-sources/34a8769.png"
+                    ],
+                    "5n7jti": [
+                      "aod-sources/8d860cc.png",
+                      "aod-sources/fb2fb3e.png",
+                      "aod-sources/99719a3.png",
+                      "aod-sources/a4d6953.png",
+                      "aod-sources/36a6ea1.png",
+                      "aod-sources/4748ca0.png",
+                      "aod-sources/2d20af1.png",
+                      "aod-sources/da6d4a0.png",
+                      "aod-sources/219adce.png",
+                      "aod-sources/34a8769.png"
+                    ]
+                  }
+                },
+                "decimalOffsetX": "0",
+                "trailingZero": false
+              }
+            }
+          ],
+          "attrs": {
+            "name": "time",
+            "x": 24,
+            "y": 96,
+            "_isLocked": false,
+            "_visibility": true,
+            "w": 288,
+            "h": 288,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "gap": 0,
+            "resources": {}
+          }
+        },
+        {
+          "id": "ycdu4h",
+          "type": "Image",
+          "attrs": {
+            "sourceEnabled": false,
+            "valueStart": 0,
+            "valueEnd": 0,
+            "angleStart": 0,
+            "angleEnd": 360,
+            "recolorEnable": true,
+            "x": 0,
+            "y": 3,
+            "w": 336,
+            "h": 480,
+            "rotation": 0,
+            "name": "aod-mask",
+            "showImgFormat": false,
+            "_visibility": true,
+            "_isLocked": false,
+            "temperatureUnitType": "celsius",
+            "pointerFps": 1,
+            "pointerRegionNum": 0,
+            "shadowPointerOffsetY": 0,
+            "resources": {
+              "pointer0": {
+                "ydwxwv": [
+                  "a927f50.png"
+                ],
+                "8c5y8q": [
+                  "d27928b.png"
+                ],
+                "gb4czu": [
+                  "b10dc56.png"
+                ],
+                "97v74a": [
+                  "81c22ed.png"
+                ],
+                "xhb8gm": [
+                  "ecb2560.png"
+                ],
+                "5n7jti": [
+                  "5ca5eca.png"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "bgColor": "#000000",
+      "colorGroupTable": [
+        {
+          "id": "ydwxwv",
+          "name": "配色1",
+          "color": "#f0d3ec"
+        },
+        {
+          "name": "配色1",
+          "id": "8c5y8q",
+          "color": "#87aed9"
+        },
+        {
+          "name": "配色1",
+          "id": "gb4czu",
+          "color": "#87dbff"
+        },
+        {
+          "name": "配色1",
+          "id": "97v74a",
+          "color": "#abf5f1"
+        },
+        {
+          "name": "配色1",
+          "id": "xhb8gm",
+          "color": "#b0dda7"
+        },
+        {
+          "name": "配色1",
+          "id": "5n7jti",
+          "color": "#ffcf66"
+        }
+      ],
+      "preview": "_preview/多功能息屏预览图.png",
+      "isSingleAOD": false
+    }
+  ],
+  "i18n": {
+    "translations": {},
+    "locales": []
+  },
+  "formats": {
+    "f9ac92a.png": "indexed8",
+    "Untitled (17)/9a0f717.png": "indexed8",
+    "Untitled (17)/a08699a.png": "indexed8",
+    "Untitled (17)/0e921ce.png": "indexed8",
+    "Untitled (17)/84fa8c5.png": "indexed8",
+    "Untitled (17)/264476f.png": "indexed8",
+    "Untitled (17)/eb95eb2.png": "indexed8",
+    "Untitled (17)/c415630.png": "indexed8",
+    "Untitled (17)/25f26a2.png": "indexed8",
+    "Untitled (17)/638c7a8.png": "indexed8",
+    "Untitled (17)/9d5ecaf.png": "indexed8",
+    "Untitled (17)/15a83b6.png": "indexed8",
+    "Untitled (17)/0ea7479.png": "indexed8",
+    "Untitled (17)/d51950c.png": "indexed8",
+    "Untitled (17)/511d6da.png": "indexed8",
+    "Untitled (17)/7592a22.png": "indexed8",
+    "Untitled (17)/192b37f.png": "indexed8",
+    "Untitled (17)/85570d3.png": "indexed8",
+    "Untitled (17)/21b8e56.png": "indexed8",
+    "Untitled (17)/a453418.png": "indexed8",
+    "Untitled (17)/4de77f6.png": "indexed8",
+    "495672b.png": "indexed8",
+    "Untitled (17)/61e4159.png": "indexed8",
+    "Untitled (17)/87d106d.png": "indexed8",
+    "Untitled (17)/c9f3c04.png": "indexed8",
+    "Untitled (17)/fe89901.png": "indexed8",
+    "Untitled (17)/645855e.png": "indexed8",
+    "Untitled (17)/f248098.png": "indexed8",
+    "Untitled (17)/643bc53.png": "indexed8",
+    "Untitled (17)/f67b687.png": "indexed8",
+    "Untitled (17)/ccb1e6d.png": "indexed8",
+    "Untitled (17)/22596fc.png": "indexed8",
+    "Untitled (17)/8e6c559.png": "indexed8",
+    "Untitled (17)/76114b8.png": "indexed8",
+    "Untitled (17)/83e7afe.png": "indexed8",
+    "Untitled (17)/7c1f4dd.png": "indexed8",
+    "Untitled (17)/4d42798.png": "indexed8",
+    "Untitled (17)/42ec586.png": "indexed8",
+    "Untitled (17)/19c77e7.png": "indexed8",
+    "Untitled (17)/45df159.png": "indexed8",
+    "Untitled (17)/2908867.png": "indexed8",
+    "Untitled (17)/d46b0be.png": "indexed8",
+    "_emptyImage.png": "indexed8",
+    "Untitled (17)/f75de41.png": "indexed8",
+    "Untitled (17)/d58d2f8.png": "indexed8",
+    "Untitled (17)/b55f54f.png": "indexed8",
+    "1d6917d.png": "indexed8",
+    "Untitled (17)/25f3d09.png": "indexed8",
+    "Untitled (17)/41b5645.png": "indexed8",
+    "Untitled (17)/faf529f.png": "indexed8",
+    "Untitled (17)/ac1afed.png": "indexed8",
+    "Untitled (17)/70cc83d.png": "indexed8",
+    "Untitled (17)/c1cf732.png": "indexed8",
+    "Untitled (17)/3aa5b9f.png": "indexed8",
+    "Untitled (17)/099583b.png": "indexed8",
+    "Untitled (17)/6f589dd.png": "indexed8",
+    "Untitled (17)/88e5543.png": "indexed8",
+    "Untitled (17)/340db60.png": "indexed8",
+    "Untitled (17)/34338f1.png": "indexed8",
+    "Untitled (17)/6819fad.png": "indexed8",
+    "Untitled (17)/cf71b49.png": "indexed8",
+    "Untitled (17)/8bcb367.png": "indexed8",
+    "Untitled (17)/0b07c02.png": "indexed8",
+    "Untitled (17)/d3543c7.png": "indexed8",
+    "Untitled (17)/503b43a.png": "indexed8",
+    "Untitled (17)/78684f7.png": "indexed8",
+    "Untitled (17)/13bb881.png": "indexed8",
+    "1e3283e.png": "indexed8",
+    "Untitled (17)/0bca175.png": "indexed8",
+    "Untitled (17)/588508f.png": "indexed8",
+    "Untitled (17)/8aeaa3e.png": "indexed8",
+    "Untitled (17)/eec974f.png": "indexed8",
+    "Untitled (17)/f2f2558.png": "indexed8",
+    "Untitled (17)/51d51b6.png": "indexed8",
+    "Untitled (17)/980f4b0.png": "indexed8",
+    "Untitled (17)/d010797.png": "indexed8",
+    "Untitled (17)/03b1a32.png": "indexed8",
+    "Untitled (17)/9240804.png": "indexed8",
+    "Untitled (17)/b9e6d70.png": "indexed8",
+    "Untitled (17)/4e96429.png": "indexed8",
+    "Untitled (17)/c007831.png": "indexed8",
+    "Untitled (17)/f887dc6.png": "indexed8",
+    "Untitled (17)/1b8b1aa.png": "indexed8",
+    "Untitled (17)/fa1d1e5.png": "indexed8",
+    "Untitled (17)/2bc00b6.png": "indexed8",
+    "Untitled (17)/00f3519.png": "indexed8",
+    "Untitled (17)/5b61f44.png": "indexed8",
+    "Untitled (17)/aae602d.png": "indexed8",
+    "Untitled (17)/67f15f3.png": "indexed8",
+    "Untitled (17)/f27a525.png": "indexed8",
+    "Untitled (17)/d8c5921.png": "indexed8",
+    "Untitled (17)/bfd896e.png": "indexed8",
+    "Untitled (17)/7edb623.png": "indexed8",
+    "54cd0f1.png": "indexed8",
+    "0c55e57.png": "indexed8",
+    "8927c74.png": "indexed8",
+    "_preview/样式2亮屏预览图.png": "indexed8",
+    "f98df95.png": "indexed8",
+    "eb92b1e.png": "indexed8",
+    "2b8a1ee.png": "indexed8",
+    "Untitled (17)/cf0fb2c.png": "indexed8",
+    "Untitled (17)/f422176.png": "indexed8",
+    "Untitled (17)/3ccd6e6.png": "indexed8",
+    "Untitled (17)/d30e2a1.png": "indexed8",
+    "Untitled (17)/41a3fd2.png": "indexed8",
+    "Untitled (17)/c45f8e9.png": "indexed8",
+    "Untitled (17)/feb8a14.png": "indexed8",
+    "_preview/样式2息屏预览图.png": "indexed8",
+    "23c5c59.png": "indexed8",
+    "2b60d3c.png": "indexed8",
+    "Untitled (17)/73a4ab3.png": "indexed8",
+    "Untitled (17)/57130d6.png": "indexed8",
+    "Untitled (17)/94605e4.png": "indexed8",
+    "Untitled (17)/281743f.png": "indexed8",
+    "Untitled (17)/39c5992.png": "indexed8",
+    "Untitled (17)/1b1eeeb.png": "indexed8",
+    "Untitled (17)/e2b5129.png": "indexed8",
+    "Untitled (17)/d51f5df.png": "indexed8",
+    "Untitled (17)/890ef1b.png": "indexed8",
+    "Untitled (17)/344e35b.png": "indexed8",
+    "Untitled (17)/f117049.png": "indexed8",
+    "Untitled (17)/f770ca0.png": "indexed8",
+    "Untitled (17)/b5a8a56.png": "indexed8",
+    "Untitled (17)/4ba818a.png": "indexed8",
+    "Untitled (17)/d170a69.png": "indexed8",
+    "Untitled (17)/c30c4ab.png": "indexed8",
+    "Untitled (17)/ceb26a7.png": "indexed8",
+    "Untitled (17)/3debbab.png": "indexed8",
+    "Untitled (17)/b25f236.png": "indexed8",
+    "Untitled (17)/d2c070a.png": "indexed8",
+    "Untitled (17)/19467a7.png": "indexed8",
+    "Untitled (17)/6c54b76.png": "indexed8",
+    "Untitled (17)/6970be3.png": "indexed8",
+    "Untitled (17)/8857aea.png": "indexed8",
+    "Untitled (17)/1310191.png": "indexed8",
+    "Untitled (17)/f92f8e3.png": "indexed8",
+    "Untitled (17)/5d28a4e.png": "indexed8",
+    "Untitled (17)/1d48363.png": "indexed8",
+    "Untitled (17)/234c65a.png": "indexed8",
+    "Untitled (17)/dd8cca9.png": "indexed8",
+    "Untitled (17)/3edbef4.png": "indexed8",
+    "7930f2b.png": "indexed8",
+    "fbfc130.png": "indexed8",
+    "6a0a931.png": "indexed8",
+    "Untitled (17)/1beb5fe.png": "indexed8",
+    "Untitled (17)/32d20e3.png": "indexed8",
+    "Untitled (17)/89cbffb.png": "indexed8",
+    "Untitled (17)/9c9cc9e.png": "indexed8",
+    "Untitled (17)/451a8a0.png": "indexed8",
+    "Untitled (17)/1e08b9d.png": "indexed8",
+    "Untitled (17)/21445b6.png": "indexed8",
+    "Untitled (17)/2554376.png": "indexed8",
+    "Untitled (17)/4770b9c.png": "indexed8",
+    "Untitled (17)/24da695.png": "indexed8",
+    "Untitled (17)/51f3dab.png": "indexed8",
+    "Untitled (17)/60c3370.png": "indexed8",
+    "Untitled (17)/7392742.png": "indexed8",
+    "Untitled (17)/16649ac.png": "indexed8",
+    "Untitled (17)/58a16e2.png": "indexed8",
+    "Untitled (17)/749805b.png": "indexed8",
+    "Untitled (17)/b7cc82e.png": "indexed8",
+    "9c889c6.png": "indexed8",
+    "06a16d9.png": "indexed8",
+    "079319c.png": "indexed8",
+    "7604408.png": "indexed8",
+    "5d7f11e.png": "indexed8",
+    "2ba900a.png": "indexed8",
+    "296e128.png": "indexed8",
+    "1e797c7.png": "indexed8",
+    "b854904.png": "indexed8",
+    "Untitled (17)/b97de89.png": "indexed8",
+    "Untitled (17)/3c658da.png": "indexed8",
+    "Untitled (17)/d8c70b2.png": "indexed8",
+    "Untitled (17)/a267e22.png": "indexed8",
+    "Untitled (17)/9970435.png": "indexed8",
+    "Untitled (17)/2278257.png": "indexed8",
+    "Untitled (17)/23b5c74.png": "indexed8",
+    "Untitled (17)/e6542ad.png": "indexed8",
+    "Untitled (17)/b94dab8.png": "indexed8",
+    "Untitled (17)/1d2943c.png": "indexed8",
+    "Untitled (17)/1016a9a.png": "indexed8",
+    "Untitled (17)/42c1f06.png": "indexed8",
+    "Untitled (17)/1555536.png": "indexed8",
+    "Untitled (17)/749956a.png": "indexed8",
+    "Untitled (17)/3090671.png": "indexed8",
+    "Untitled (17)/3836ffb.png": "indexed8",
+    "Untitled (17)/c9f1359.png": "indexed8",
+    "Untitled (17)/133962e.png": "indexed8",
+    "Untitled (17)/3371e6c.png": "indexed8",
+    "Untitled (17)/13cf298.png": "indexed8",
+    "Untitled (17)/a7ad6b0.png": "indexed8",
+    "Untitled (17)/1102bdf.png": "indexed8",
+    "Untitled (17)/cb7bb7c.png": "indexed8",
+    "Untitled (17)/ca5c94e.png": "indexed8",
+    "Untitled (17)/0d1eba0.png": "indexed8",
+    "Untitled (17)/852b1e4.png": "indexed8",
+    "Untitled (17)/28a4fe1.png": "indexed8",
+    "Untitled (17)/4542c5e.png": "indexed8",
+    "Untitled (17)/f1aea4c.png": "indexed8",
+    "Untitled (17)/985dc91.png": "indexed8",
+    "Untitled (17)/feff72a.png": "indexed8",
+    "Untitled (17)/253f973.png": "indexed8",
+    "Untitled (17)/0a68c55.png": "indexed8",
+    "Untitled (17)/750b732.png": "indexed8",
+    "Untitled (17)/fa9293a.png": "indexed8",
+    "Untitled (17)/566f193.png": "indexed8",
+    "Untitled (17)/f8b28cb.png": "indexed8",
+    "Untitled (17)/b2b18dd.png": "indexed8",
+    "Untitled (17)/ac93912.png": "indexed8",
+    "Untitled (17)/759d266.png": "indexed8",
+    "3f97d33.png": "indexed8",
+    "416db5e.png": "indexed8",
+    "e46599e.png": "indexed8",
+    "Untitled (17)/7fd7e5a.png": "indexed8",
+    "Untitled (17)/6f97911.png": "indexed8",
+    "Untitled (17)/84f0eaf.png": "indexed8",
+    "Untitled (17)/3c80bd2.png": "indexed8",
+    "Untitled (17)/ea2a408.png": "indexed8",
+    "Untitled (17)/8d407d2.png": "indexed8",
+    "Untitled (17)/d883acb.png": "indexed8",
+    "Untitled (17)/054372d.png": "indexed8",
+    "Untitled (17)/ec2413c.png": "indexed8",
+    "Untitled (17)/86dd30d.png": "indexed8",
+    "Untitled (17)/ccde5f0.png": "indexed8",
+    "30528ca.png": "indexed8",
+    "a3ff005.png": "indexed8",
+    "18ebb06.png": "indexed8",
+    "Untitled (17)/b97b665.png": "indexed8",
+    "Untitled (17)/82b45fa.png": "indexed8",
+    "Untitled (17)/db37f66.png": "indexed8",
+    "Untitled (17)/9e445b4.png": "indexed8",
+    "Untitled (17)/aec4648.png": "indexed8",
+    "Untitled (17)/3e492c2.png": "indexed8",
+    "Untitled (17)/9ec454a.png": "indexed8",
+    "Untitled (17)/8699bb2.png": "indexed8",
+    "Untitled (17)/17e6f64.png": "indexed8",
+    "Untitled (17)/5d9e2bc.png": "indexed8",
+    "Untitled (17)/bf99f05.png": "indexed8",
+    "Untitled (17)/6f8cee6.png": "indexed8",
+    "Untitled (17)/b2e9050.png": "indexed8",
+    "Untitled (17)/13b3b93.png": "indexed8",
+    "Untitled (17)/8bf6482.png": "indexed8",
+    "Untitled (17)/08bf429.png": "indexed8",
+    "Untitled (17)/fbb05d1.png": "indexed8",
+    "Untitled (17)/86fdd3f.png": "indexed8",
+    "Untitled (17)/edbcc90.png": "indexed8",
+    "Untitled (17)/af2dd4c.png": "indexed8",
+    "Untitled (17)/ac5d476.png": "indexed8",
+    "_preview/多功能亮屏预览图.png": "indexed8",
+    "_preview/多功能息屏预览图.png": "indexed8",
+    "_preview/简约亮屏预览图.png": "indexed8",
+    "sources/00f3519.png": "indexed8",
+    "sources/054372d.png": "indexed8",
+    "sources/08bf429.png": "indexed8",
+    "sources/099583b.png": "indexed8",
+    "sources/0a68c55.png": "indexed8",
+    "sources/0b07c02.png": "indexed8",
+    "sources/0d1eba0.png": "indexed8",
+    "sources/1102bdf.png": "indexed8",
+    "sources/1310191.png": "indexed8",
+    "sources/13b3b93.png": "indexed8",
+    "sources/13bb881.png": "indexed8",
+    "sources/16649ac.png": "indexed8",
+    "sources/17e6f64.png": "indexed8",
+    "sources/1b8b1aa.png": "indexed8",
+    "sources/1beb5fe.png": "indexed8",
+    "sources/1d48363.png": "indexed8",
+    "sources/1e08b9d.png": "indexed8",
+    "sources/21445b6.png": "indexed8",
+    "sources/234c65a.png": "indexed8",
+    "sources/24da695.png": "indexed8",
+    "sources/253f973.png": "indexed8",
+    "sources/2554376.png": "indexed8",
+    "sources/25f3d09.png": "indexed8",
+    "sources/28a4fe1.png": "indexed8",
+    "sources/2bc00b6.png": "indexed8",
+    "sources/32d20e3.png": "indexed8",
+    "sources/340db60.png": "indexed8",
+    "sources/34338f1.png": "indexed8",
+    "sources/3aa5b9f.png": "indexed8",
+    "sources/3c80bd2.png": "indexed8",
+    "sources/3ccd6e6.png": "indexed8",
+    "sources/3e492c2.png": "indexed8",
+    "sources/3edbef4.png": "indexed8",
+    "sources/41b5645.png": "indexed8",
+    "sources/451a8a0.png": "indexed8",
+    "sources/4542c5e.png": "indexed8",
+    "sources/4770b9c.png": "indexed8",
+    "sources/4e96429.png": "indexed8",
+    "sources/503b43a.png": "indexed8",
+    "sources/51f3dab.png": "indexed8",
+    "sources/566f193.png": "indexed8",
+    "sources/58a16e2.png": "indexed8",
+    "sources/5b61f44.png": "indexed8",
+    "sources/5d28a4e.png": "indexed8",
+    "sources/5d9e2bc.png": "indexed8",
+    "sources/60c3370.png": "indexed8",
+    "sources/67f15f3.png": "indexed8",
+    "sources/6819fad.png": "indexed8",
+    "sources/6970be3.png": "indexed8",
+    "sources/6c54b76.png": "indexed8",
+    "sources/6f589dd.png": "indexed8",
+    "sources/6f8cee6.png": "indexed8",
+    "sources/6f97911.png": "indexed8",
+    "sources/70cc83d.png": "indexed8",
+    "sources/7392742.png": "indexed8",
+    "sources/73a4ab3.png": "indexed8",
+    "sources/749805b.png": "indexed8",
+    "sources/750b732.png": "indexed8",
+    "sources/759d266.png": "indexed8",
+    "sources/78684f7.png": "indexed8",
+    "sources/7edb623.png": "indexed8",
+    "sources/7fd7e5a.png": "indexed8",
+    "sources/82b45fa.png": "indexed8",
+    "sources/84f0eaf.png": "indexed8",
+    "sources/852b1e4.png": "indexed8",
+    "sources/8699bb2.png": "indexed8",
+    "sources/86dd30d.png": "indexed8",
+    "sources/86fdd3f.png": "indexed8",
+    "sources/8857aea.png": "indexed8",
+    "sources/88e5543.png": "indexed8",
+    "sources/89cbffb.png": "indexed8",
+    "sources/8bcb367.png": "indexed8",
+    "sources/8bf6482.png": "indexed8",
+    "sources/8d407d2.png": "indexed8",
+    "sources/985dc91.png": "indexed8",
+    "sources/9c9cc9e.png": "indexed8",
+    "sources/9e445b4.png": "indexed8",
+    "sources/9ec454a.png": "indexed8",
+    "sources/a7ad6b0.png": "indexed8",
+    "sources/aae602d.png": "indexed8",
+    "sources/ac1afed.png": "indexed8",
+    "sources/ac5d476.png": "indexed8",
+    "sources/ac93912.png": "indexed8",
+    "sources/aec4648.png": "indexed8",
+    "sources/af2dd4c.png": "indexed8",
+    "sources/b2b18dd.png": "indexed8",
+    "sources/b2e9050.png": "indexed8",
+    "sources/b55f54f.png": "indexed8",
+    "sources/b7cc82e.png": "indexed8",
+    "sources/b97b665.png": "indexed8",
+    "sources/b9e6d70.png": "indexed8",
+    "sources/bf99f05.png": "indexed8",
+    "sources/c007831.png": "indexed8",
+    "sources/c1cf732.png": "indexed8",
+    "sources/c45f8e9.png": "indexed8",
+    "sources/ca5c94e.png": "indexed8",
+    "sources/cb7bb7c.png": "indexed8",
+    "sources/ccde5f0.png": "indexed8",
+    "sources/cf0fb2c.png": "indexed8",
+    "sources/cf71b49.png": "indexed8",
+    "sources/d3543c7.png": "indexed8",
+    "sources/d58d2f8.png": "indexed8",
+    "sources/d883acb.png": "indexed8",
+    "sources/d8c5921.png": "indexed8",
+    "sources/db37f66.png": "indexed8",
+    "sources/dd8cca9.png": "indexed8",
+    "sources/ea2a408.png": "indexed8",
+    "sources/ec2413c.png": "indexed8",
+    "sources/edbcc90.png": "indexed8",
+    "sources/f1aea4c.png": "indexed8",
+    "sources/f422176.png": "indexed8",
+    "sources/f887dc6.png": "indexed8",
+    "sources/f8b28cb.png": "indexed8",
+    "sources/f92f8e3.png": "indexed8",
+    "sources/fa1d1e5.png": "indexed8",
+    "sources/fa9293a.png": "indexed8",
+    "sources/faf529f.png": "indexed8",
+    "sources/fbb05d1.png": "indexed8",
+    "sources/feb8a14.png": "indexed8",
+    "sources/feff72a.png": "indexed8",
+    "586d948.png": "indexed8",
+    "5e5854c.png": "indexed8",
+    "sources/e9f7192.png": "indexed8",
+    "d46e372.png": "indexed8",
+    "586e552.png": "indexed8",
+    "f546f5e.png": "indexed8",
+    "8446573.png": "indexed8",
+    "54f6f0f.png": "indexed8",
+    "d821531.png": "indexed8",
+    "734f756.png": "indexed8",
+    "sources/56175a2.png": "indexed8",
+    "sources/ec9c692.png": "indexed8",
+    "sources/9037c79.png": "indexed8",
+    "sources/b844c73.png": "indexed8",
+    "sources/4ee0d3a.png": "indexed8",
+    "sources/3c75a8c.png": "indexed8",
+    "a927f50.png": "indexed8",
+    "d27928b.png": "indexed8",
+    "b10dc56.png": "indexed8",
+    "81c22ed.png": "indexed8",
+    "ecb2560.png": "indexed8",
+    "5ca5eca.png": "indexed8",
+    "sources/9163145.png": "indexed8",
+    "sources/388f659.png": "indexed8",
+    "sources/dc3259f.png": "indexed8",
+    "sources/94b1272.png": "indexed8",
+    "sources/4a8dde3.png": "indexed8",
+    "sources/2967797.png": "indexed8",
+    "sources/521e222.png": "indexed8",
+    "sources/4fdf877.png": "indexed8",
+    "sources/0313912.png": "indexed8",
+    "sources/98788b4.png": "indexed8",
+    "sources/3a039d7.png": "indexed8",
+    "sources/452fab2.png": "indexed8",
+    "sources/a79aee0.png": "indexed8",
+    "sources/edc2982.png": "indexed8",
+    "sources/f13937f.png": "indexed8",
+    "sources/04627e9.png": "indexed8",
+    "sources/ea6ebec.png": "indexed8",
+    "sources/02e9586.png": "indexed8",
+    "sources/de127eb.png": "indexed8",
+    "sources/2198e85.png": "indexed8",
+    "4f2e92c.png": "indexed8",
+    "aod-sources/8d860cc.png": "indexed8",
+    "aod-sources/fb2fb3e.png": "indexed8",
+    "aod-sources/99719a3.png": "indexed8",
+    "aod-sources/a4d6953.png": "indexed8",
+    "aod-sources/36a6ea1.png": "indexed8",
+    "aod-sources/4748ca0.png": "indexed8",
+    "aod-sources/2d20af1.png": "indexed8",
+    "aod-sources/da6d4a0.png": "indexed8",
+    "aod-sources/219adce.png": "indexed8",
+    "aod-sources/34a8769.png": "indexed8",
+    "aod-sources/af2e682.png": "indexed8",
+    "aod-sources/5ab11b8.png": "indexed8",
+    "aod-sources/5e9c10a.png": "indexed8",
+    "aod-sources/6eaa806.png": "indexed8",
+    "aod-sources/7df5034.png": "indexed8",
+    "aod-sources/09087fa.png": "indexed8",
+    "aod-sources/f5c9257.png": "indexed8",
+    "aod-sources/011ab8c.png": "indexed8",
+    "aod-sources/666e4bf.png": "indexed8",
+    "aod-sources/77f26dc.png": "indexed8"
+  }
+}
