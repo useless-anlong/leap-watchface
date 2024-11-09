@@ -150,6 +150,7 @@
             background-size: cover;
             background-position: center;
             transition: opacity 0.2s ease-out;
+            pointer-events: none;
         }
 
         /* .carousel-item {
@@ -318,6 +319,10 @@
 
             header {
                 width: calc(100vw - 40px) !important;
+            }
+
+            #download {
+                padding-top: 286px !important;
             }
         }
 
@@ -605,30 +610,41 @@
     <script>
         const wallpaper = document.getElementById('wallpaper');
 
-        const items = document.querySelectorAll('.carousel-item');
-        const dots = document.querySelectorAll('.dot');
-        let currentIndex = 0; // 改为0，表示从第一张开始
+        // 在 <script> 标签内添加
+        document.addEventListener('DOMContentLoaded', () => {
+            const items = document.querySelectorAll('.carousel-item');
+            const dots = document.querySelectorAll('.dot');
+            let currentIndex = 0;
 
-        function showSlide(index) {
-            items.forEach(item => {
-                item.style.opacity = '0';
-                item.style.transition = 'opacity 0.3s ease-out';
-            });
+            function showSlide(index) {
+                requestAnimationFrame(() => {
+                    items.forEach(item => item.style.opacity = '0');
+                    dots.forEach(dot => dot.classList.remove('active'));
 
-            dots.forEach(dot => dot.classList.remove('active'));
+                    items[index].style.opacity = '1';
+                    dots[index].classList.add('active');
+                });
+            }
 
-            items[index].style.opacity = '1';
-            dots[index].classList.add('active');
-        }
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
+            function handleDotClick(index) {
                 currentIndex = index;
                 showSlide(currentIndex);
-            });
-        });
+            }
 
-        showSlide(currentIndex);
+            dots.forEach((dot, index) => {
+                dot.onclick = () => handleDotClick(index);
+            });
+
+            function autoPlay() {
+                currentIndex = (currentIndex + 1) % items.length;
+                showSlide(currentIndex);
+            }
+
+            const interval = setInterval(autoPlay, 3000);
+
+            // 初始显示
+            showSlide(0);
+        });
 
         function updateCoverEffect() {
             const scrolled = window.scrollY;
