@@ -30,6 +30,7 @@
             text-align: center;
             flex-direction: column;
             overflow-x: hidden;
+            user-select: none;
         }
 
         .cover {
@@ -74,8 +75,8 @@
         }
 
         header {
-            position: sticky;
-            top: 0;
+            /* position: sticky; */
+            /* top: 0; */
             width: calc(100vw - 40px - 15px);
             /* max-width: 1064px; */
             padding: 18px 20px;
@@ -127,8 +128,8 @@
 
         /* Add these styles in the existing <style> tag */
         .carousel-wrapper {
-            width: 235px;
-            height: 272px;
+            width: 276px;
+            height: 318px;
             display: flex;
             justify-content: space-between;
             flex-direction: row;
@@ -137,14 +138,14 @@
 
         .carousel {
             height: 100%;
-            width: 202px;
+            width: 235px;
             overflow: hidden;
         }
 
         .carousel-item {
             position: absolute;
-            width: 202px;
-            height: 272px;
+            width: 235px;
+            height: 318px;
             opacity: 0;
             background-size: cover;
             background-position: center;
@@ -187,7 +188,7 @@
         #designed-for-miband9-pro {
             background: black;
             width: calc(100% - 128px);
-            height: 512px;
+            height: 464px;
             padding: 0 64px;
             z-index: 2;
             color: white;
@@ -229,7 +230,7 @@
             align-items: center;
             justify-content: space-between;
             /* height: calc(100vh - 54px); */
-            height: 596px;
+            height: 648px;
             width: calc(100% - 128px);
             padding: 0 64px;
             /* position: sticky; */
@@ -237,6 +238,7 @@
             transition: transform 0.1s ease-out;
             z-index: 2;
             background: white;
+            gap: 32px;
         }
 
         .aod-preview {
@@ -253,14 +255,16 @@
 
         .aod-preview-tips {
             display: flex;
-            background-color: rgba(0, 0, 0, 0.1);
-            padding: 8px 10px;
+            background-color: rgba(0, 0, 0, 0.075);
+            backdrop-filter: blur(10px);
+            padding: 8px 12px;
             border-radius: 20px;
             font-family: MiSans;
             font-weight: 380;
             font-size: 14px;
-            opacity: 0.75;
+            /* opacity: 0.75; */
             margin-bottom: 14px;
+            color: rgba(0, 0, 0, 0.65);
         }
 
         @media (max-width: 660px) {
@@ -331,9 +335,11 @@
             #fengjing-huiying-aod {
                 display: flex;
                 flex-direction: column;
-                height: calc(100vh - 54px - 128px);
+                height: auto;
+                max-height: 100vh;
                 padding: 64px 32px;
                 width: calc(100% - 64px);
+                gap: 32px;
             }
 
             #fengjing-huiying-aod .text-container {
@@ -341,7 +347,7 @@
             }
 
             .aod-preview {
-                width: 390px;
+                width: 360px;
             }
         }
 
@@ -355,11 +361,12 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            height: calc(100vh - 256px - 54px);
+            height: calc(100vh - 256px - 196px);
             /* height: calc(100vh - 54px); */
             gap: 24px;
             width: calc(100% - 128px);
             padding: 0 64px;
+            padding-top: 196px;
             /* position: fixed; */
             /* bottom: calc(-100vh + 54px); */
             z-index: 0;
@@ -518,7 +525,7 @@
                 等边曲屏打造
             </h1>
         </div>
-        <img src="leap-miband9-show.png" alt="show" height="472" style="margin-right: -128px; max-height: 400px;">
+        <img src="leap-miband9-show.png" alt="show" height="472" style="margin-right: -128px; max-height: 464px;">
     </div>
     <div id="fengjing-huiying-aod">
         <div class="text-container" style="min-width: fit-content;">
@@ -681,21 +688,32 @@
         function changeBandDisplayMode(element) {
             const currentBg = element.style.backgroundImage;
 
-            if (currentBg.includes('AOD.png')) {
-                // First switch to OFF.png without transition
+            if (currentBg.includes('DEFAULT.png')) {
+                // Switch to AOD mode
+                element.style.transition = 'none';
+                element.style.backgroundImage = 'url(AOD.png)';
+            } else {
+                // Switch from AOD/initial to DEFAULT mode
                 element.style.transition = 'none';
                 element.style.backgroundImage = 'url(OFF.png)';
 
-                // Then switch to DEFAULT.png after 100ms with transition
                 setTimeout(() => {
                     element.style.transition = 'background-image 0.3s ease-out';
                     element.style.backgroundImage = 'url(DEFAULT.png)';
                 }, 100);
-            } else {
-                element.style.transition = 'none';
-                element.style.backgroundImage = 'url(AOD.png)';
             }
         }
+
+        function replaceFullWidthCommas() {
+            if (window.innerWidth <= 415) {
+                document.body.innerHTML = document.body.innerHTML.replace(/，/g, ', ');
+            } else {
+                document.body.innerHTML = document.body.innerHTML.replace(/, /g, '，');
+            }
+        }
+
+        window.addEventListener('load', replaceFullWidthCommas);
+        window.addEventListener('resize', replaceFullWidthCommas);
     </script>
 </body>
 
