@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>跃界 - 小米手环 9 Pro 表盘</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="preload" as="image" href="AOD.png">
     <link rel="preload" as="image" href="OFF.png">
     <link rel="preload" as="image" href="DEFAULT.png">
@@ -75,7 +76,7 @@
         header {
             position: sticky;
             top: 0;
-            width: calc(100vw - 40px);
+            width: calc(100vw - 40px - 15px);
             /* max-width: 1064px; */
             padding: 18px 20px;
             display: flex;
@@ -309,6 +310,10 @@
 
             #download h1 {
                 width: 120%;
+            }
+
+            header {
+                width: calc(100vw - 40px) !important;
             }
         }
 
