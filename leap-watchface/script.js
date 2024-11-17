@@ -363,6 +363,77 @@ document.addEventListener('DOMContentLoaded', () => {
         stepControl.querySelector('#stepsInput').value = defaultValues.health.stepsInput;
         document.getElementById('step').textContent = defaultValues.health.stepsInput;
     });
+
+
+    const inputs = document.querySelectorAll('input[type="number"]');
+
+    const valueAlert = document.createElement('div');
+    valueAlert.className = 'app-tips';
+    document.body.appendChild(valueAlert);
+
+    // 修改输入验证代码
+    inputs.forEach(input => {
+        input.addEventListener('input', function () {
+            const min = parseInt(this.min) || 0;
+            const max = parseInt(this.max) || Infinity;
+            let value = parseInt(this.value) || 0;
+
+            if (value < min || value > max) {
+                valueAlert.innerHTML = `你刚刚输入的 ${value} 超出允许范围<br><span style="opacity: 0.5; font-size: 12.5px;">${value < min ? `允许的最小值为 ${min}` : `允许的最大值为 ${max}`}</span>`;
+                valueAlert.style.opacity = '1';
+                valueAlert.style.left = `${this.getBoundingClientRect().left - 12}px`;
+                valueAlert.style.top = `${this.getBoundingClientRect().bottom + 5}px`;
+
+                setTimeout(() => {
+                    valueAlert.style.opacity = '0';
+                }, 4000);
+            }
+
+            // 限制值在最小值和最大值之间
+            if (value < min) value = min;
+            if (value > max) value = max;
+
+            this.value = value;
+
+            // 触发原有的更新函数
+            if (this.id === 'stepsInput') {
+                document.getElementById('step').textContent = value;
+            } else if (this.id === 'batteryLevel') {
+                document.getElementById('batteryValue').textContent = value + '%';
+                updateBatteryDisplay(value / 100, document.querySelector('input[name="charging"]:checked').value === 'charging');
+            }
+        });
+    });
+
+    // 创建tooltip元素
+    const tooltip = document.createElement('div');
+    tooltip.className = 'app-tips';
+    tooltip.id = 'tool-tip';
+    document.body.appendChild(tooltip);
+
+    // 获取所有带title的元素
+    document.querySelectorAll('[title]').forEach(element => {
+        const titleText = element.getAttribute('title');
+        element.removeAttribute('title'); // 移除原始title
+
+        element.addEventListener('mouseenter', () => {
+            const elementRect = element.getBoundingClientRect();
+            const elementCenter = elementRect.left + (elementRect.width / 2);
+
+            tooltip.textContent = titleText;
+            tooltip.style.opacity = '1';
+            tooltip.style.fontSize = '13px';
+            tooltip.style.left = `${elementRect.left - 68}px`;
+            tooltip.style.top = `${elementRect.bottom + 5}px`;
+
+            // 设置倒三角位置的CSS变量
+            tooltip.style.setProperty('--triangle-left', `${tooltip.offsetWidth - (elementRect.width)}px`);
+        });
+
+        element.addEventListener('mouseleave', () => {
+            tooltip.style.opacity = '0';
+        });
+    });
 });
 
 const closeBtn = document.querySelector('#tips .close-btn')
