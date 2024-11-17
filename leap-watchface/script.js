@@ -260,7 +260,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('input[value="normal"]').checked = true;
         updateTime();
         // console.log(styleNumberVariable);
-        applyStyle(styleNumberVariable)
+        applyStyle(styleNumberVariable);
+
+        watchfaceSwitch.style.zIndex = '-2';
     });
 
     let minimizeTimeout;
