@@ -133,6 +133,7 @@
     <div class="container">
         <div class="watchface-wrapper">
             <div class="watch-screen">
+                <div class="watchface-switch"></div>
                 <div class="watchface-container">
                     <div class="watchface-name hidden">跃界</div>
                     <div class="watch-face">
@@ -200,6 +201,37 @@
         </div>
     </div>
     <div class="variable-controls">
+        <div id="display-control" class="control-container">
+            <h1 class="control-title">
+                显示模式
+                <button class="reset-btn" title="重置模块设置"></button>
+            </h1>
+            <div class="charging-controls">
+                <label>
+                    <input type="radio" name="display-mode" value="normal" checked>
+                    亮屏
+                </label>
+                <label>
+                    <input type="radio" name="display-mode" value="aod">
+                    息屏
+                </label>
+            </div>
+            <div class="aod-timeout">
+                <p>自动息屏时间</p>
+                <select id="aodTimeout">
+                    <option value="5">5 秒</option>
+                    <option value="10">10 秒</option>
+                    <option value="20">20 秒</option>
+                    <option value="30">30 秒</option>
+                    <option value="60">1 分钟</option>
+                    <option value="300">5 分钟</option>
+                </select>
+            </div>
+            <div class="aod-timeout">
+                <p>距离自动息屏剩余</p>
+                <p id="countdown">00:00</p>
+            </div>
+        </div>
         <div id="time-control" class="control-container">
             <h1 class="control-title">
                 时间与日期

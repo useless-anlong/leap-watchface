@@ -71,6 +71,14 @@ label {
     justify-content: center;
 }
 
+.watchface-switch {
+    position: absolute;
+    width: 252px;
+    height: 360px;
+    display: block;
+    z-index: -2;
+}
+
 .watchface-wrapper {
     position: relative;
     display: flex;
@@ -166,8 +174,8 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    background-size: cover !important;
+    background-position: center !important;
     /* cursor: none; */
     z-index: 1;
 }
@@ -178,8 +186,8 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: top center;
+    background-size: cover !important;
+    background-position: top center !important;
     /* cursor: none; */
     z-index: 3;
 }
@@ -919,6 +927,29 @@ input[type="range"]:focus::-webkit-slider-thumb {
 #tool-tip::before {
     left: var(--triangle-left);
 }
+
+.aod-timeout {
+    margin-top: 12px;
+}
+
+.aod-timeout select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #cccccc00;
+    background: #f5f5f5;
+    transition: all 0.2s ease-in;
+}
+
+.aod-timeout select:hover {
+    border: 1px solid #ccc;
+}
+
+.aod-timeout select:focus {
+    border: 1px solid #007AFF;
+    outline: none;
+}
+
 
 /* ########################## */
 /* #                        # */

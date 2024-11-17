@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     root.style.setProperty('--step-icon-filter', 'invert(0)');
 
     const editBtn = document.querySelector('.edit-btn');
-    const deleteBtn = document.querySelector('.delete-btn');
+    // const deleteBtn = document.querySelector('.delete-btn');
     const styleDots = document.querySelector('.style-dots');
     const editButtons = document.querySelector('.edit-buttons');
     const actionButtons = document.querySelector('.action-buttons');
@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const initialBatteryLevel = document.getElementById('batteryLevel').value;
     updateBatteryDisplay(initialBatteryLevel / 100, false);
+    const aodTimeoutSelect = document.getElementById('aodTimeout');
+    const countdownElement = document.getElementById('countdown');
+
+    let timeoutId;
 
     let currentStyle = 1;
 
@@ -21,38 +25,62 @@ document.addEventListener('DOMContentLoaded', () => {
         1: {
             wallpaper: 'assets/style1/background.png',
             mask: 'assets/style1/mask.png',
-            hours: 'assets/general/hours/',    // 时钟数字图片路径
-            minutes: 'assets/general/minutes/' // 分钟数字图片路径
+            hours: 'assets/general/hours/',
+            minutes: 'assets/general/minutes/',
+            aodHours: 'assets/aod/hours/',
+            aodMinutes: 'assets/aod/minutes/',
+            aodBackground: 'assets/general/aod-background.png',
+            aodMask: 'assets/style1/aod-background.png'
         },
         2: {
             wallpaper: 'assets/style2/background.png',
             mask: 'assets/style2/mask.png',
             hours: 'assets/general/hours/',
-            minutes: 'assets/general/minutes/'
+            minutes: 'assets/general/minutes/',
+            aodHours: 'assets/aod/hours/',
+            aodMinutes: 'assets/aod/minutes/',
+            aodBackground: 'assets/general/aod-background.png',
+            aodMask: 'assets/style2/aod-background.png'
         },
         3: {
             wallpaper: 'assets/style3/background.png',
             mask: 'assets/style3/mask.png',
             hours: 'assets/general/hours/',
-            minutes: 'assets/general/minutes/'
+            minutes: 'assets/general/minutes/',
+            aodHours: 'assets/aod/hours/',
+            aodMinutes: 'assets/aod/minutes/',
+            aodBackground: 'assets/general/aod-background.png',
+            aodMask: 'assets/style3/aod-background.png'
         },
         4: {
             wallpaper: 'assets/style4/background.png',
             mask: 'assets/style4/mask.png',
             hours: 'assets/general/hours/',
-            minutes: 'assets/general/minutes/'
+            minutes: 'assets/general/minutes/',
+            aodHours: 'assets/aod/hours/',
+            aodMinutes: 'assets/aod/minutes/',
+            aodBackground: 'assets/general/aod-background.png',
+            aodMask: 'assets/style4/aod-background.png'
         },
         5: {
             wallpaper: 'assets/style5/background.png',
             mask: 'assets/style5/mask.png',
             hours: 'assets/general/hours/',
-            minutes: 'assets/general/minutes/'
+            minutes: 'assets/general/minutes/',
+            aodHours: 'assets/aod/hours/',
+            aodMinutes: 'assets/aod/minutes/',
+            aodBackground: 'assets/general/aod-background.png',
+            aodMask: 'assets/style5/aod-background.png'
         },
         6: {
             wallpaper: 'assets/style6/background.png',
             mask: 'assets/style6/mask.png',
             hours: 'assets/style6/hours/',
-            minutes: 'assets/style6/minutes/'
+            minutes: 'assets/style6/minutes/',
+            aodHours: 'assets/aod/hours/',
+            aodMinutes: 'assets/aod/minutes/',
+            aodBackground: 'assets/general/aod-background.png',
+            aodMask: 'assets/style6/aod-background.png'
         }
     };
     const systemTimeCheckbox = document.getElementById('systemTime');
@@ -95,50 +123,145 @@ document.addEventListener('DOMContentLoaded', () => {
             steps = stepsInput.value || '2560';
         }
 
-        const style = STYLE_ASSETS[currentStyle];
         const [hour1, hour2] = hours.split('');
         const [minute1, minute2] = minutes.split('');
 
-        document.getElementById('hour1').style.backgroundImage = `url('${style.hours}${hour1}.png')`;
-        document.getElementById('hour2').style.backgroundImage = `url('${style.hours}${hour2}.png')`;
-        document.getElementById('minute1').style.backgroundImage = `url('${style.minutes}${minute1}.png')`;
-        document.getElementById('minute2').style.backgroundImage = `url('${style.minutes}${minute2}.png')`;
+        function updateNormalTime() {
+            const style = STYLE_ASSETS[currentStyle];
+            document.getElementById('hour1').style.backgroundImage = `url('${style.hours}${hour1}.png')`;
+            document.getElementById('hour2').style.backgroundImage = `url('${style.hours}${hour2}.png')`;
+            document.getElementById('minute1').style.backgroundImage = `url('${style.minutes}${minute1}.png')`;
+            document.getElementById('minute2').style.backgroundImage = `url('${style.minutes}${minute2}.png')`;
 
-        document.getElementById('date').innerHTML = `${month}<span class="slash">/</span>${day}`;
-        document.getElementById('ampm').textContent = parseInt(hours) >= 12 ? '下午' : '上午';
+            document.getElementById('date').innerHTML = `${month}<span class="slash">/</span>${day}`;
+            document.getElementById('ampm').textContent = parseInt(hours) >= 12 ? '下午' : '上午';
 
-        const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
-        const weekday = new Date(2024, parseInt(month) - 1, parseInt(day)).getDay();
-        document.getElementById('weekday').textContent = weekdays[weekday];
-    }
+            const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+            const weekday = new Date(2024, parseInt(month) - 1, parseInt(day)).getDay();
+            document.getElementById('weekday').textContent = weekdays[weekday];
+        }
+
+        function updateAodTime() {
+            document.getElementById('hour1').style.backgroundImage = `url('./assets/aod/hours/${hour1}.png')`;
+            document.getElementById('hour2').style.backgroundImage = `url('./assets/aod/hours/${hour2}.png')`;
+            document.getElementById('minute1').style.backgroundImage = `url('./assets/aod/minutes/${minute1}.png')`;
+            document.getElementById('minute2').style.backgroundImage = `url('./assets/aod/minutes/${minute2}.png')`;
+        }
+
+        document.getElementsByName('display-mode').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                const selectedValue = e.target.value;
+                if (selectedValue === 'aod') {
+                    updateAodTime()
+                } else {
+                    updateNormalTime()
+                }
+            });
+        })
+
+        const initialValue = document.querySelector('input[name="display-mode"]:checked').value;
+        if (initialValue === 'aod') {
+            updateAodTime()
+        } else {
+            updateNormalTime()
+        }
+    };
 
     timeInputs.forEach(input => {
         input.addEventListener('input', updateTime);
     });
+
     stepsInput.addEventListener('input', updateTime);
-    function applyStyle(styleNumber) {
+
+    var styleNumberVariable;
+
+    function applyStyle(styleNumber, selectedTimeout) {
         const style = STYLE_ASSETS[styleNumber];
         const wallpaper = watchFace.querySelector('.wallpaper');
         const mask = watchFace.querySelector('.mask');
 
-        wallpaper.style.backgroundImage = `url('${style.wallpaper}')`;
-        mask.style.backgroundImage = `url('${style.mask}')`;
+        const stepContainer = document.querySelector('.step-container');
+        const dateContainer = document.querySelector('.date-container');
 
-        // Add style-specific CSS variable changes
-        if (styleNumber === '6') {
-            document.documentElement.style.setProperty('--step-number-color', 'rgba(0, 0, 0, 0.75)');
-            document.documentElement.style.setProperty('--step-icon-filter', 'invert(1)');
-        } else {
-            document.documentElement.style.setProperty('--step-number-color', 'rgba(255, 255, 255, 0.75)');
-            document.documentElement.style.setProperty('--step-icon-filter', 'invert(0)');
+        function appleDefaultStyle() {
+            wallpaper.style.backgroundImage = `url('${style.wallpaper}')`;
+            mask.style.backgroundImage = `url('${style.mask}')`;
+
+            // Add style-specific CSS variable changes
+            if (styleNumber === '6') {
+                document.documentElement.style.setProperty('--step-number-color', 'rgba(0, 0, 0, 0.75)');
+                document.documentElement.style.setProperty('--step-icon-filter', 'invert(1)');
+            } else {
+                document.documentElement.style.setProperty('--step-number-color', 'rgba(255, 255, 255, 0.75)');
+                document.documentElement.style.setProperty('--step-icon-filter', 'invert(0)');
+            }
+
+            stepContainer.style.opacity = '1';
+            dateContainer.style.opacity = '1';
+
+            currentStyle = styleNumber;
         }
 
-        currentStyle = styleNumber;
+        function appleAodStyle() {
+            wallpaper.style.backgroundImage = `url('${style.aodBackground}')`;
+            mask.style.backgroundImage = `url('${style.aodMask}')`;
 
-        console.log(styleNumber)
+            stepContainer.style.opacity = '0';
+            dateContainer.style.opacity = '0';
+
+            currentStyle = styleNumber;
+        }
+
+        document.getElementsByName('display-mode').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                const selectedValue = e.target.value;
+                if (selectedValue === 'aod') {
+                    appleAodStyle()
+                } else {
+                    appleDefaultStyle()
+                }
+            });
+        })
+
+        appleDefaultStyle()
+
+        const initialValue = document.querySelector('input[name="display-mode"]:checked').value;
+        if (initialValue === 'aod') {
+            appleAodStyle()
+        } else {
+            appleDefaultStyle()
+        }
 
         updateTime();
+
+        styleNumberVariable = styleNumber;
+
+        // // 清除之前的计时器
+        // clearTimeout(timeoutId);
+
+        // // 根据当前样式重新设置计时器
+        // timeoutId = setTimeout(applyStyle, selectedTimeout * 1000, styleNumber);
     }
+
+    const watchfaceSwitch = document.querySelector('.watchface-switch');
+
+    document.getElementsByName('display-mode').forEach(radio => {
+        radio.addEventListener('change', (e) => {
+            const selectedValue = e.target.value;
+            if (selectedValue === 'aod') {
+                watchfaceSwitch.style.zIndex = '10';
+            } else {
+                watchfaceSwitch.style.zIndex = '-2';
+            }
+        });
+    })
+
+    watchfaceSwitch.addEventListener('click', () => {
+        document.querySelector('input[value="normal"]').checked = true;
+        updateTime();
+        // console.log(styleNumberVariable);
+        applyStyle(styleNumberVariable)
+    });
 
     let minimizeTimeout;
     let justMinimized = false;
@@ -239,6 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         justMinimized = false;
     });
+
     editBtn.addEventListener('click', () => {
         styleDots.classList.remove('hidden');
         editButtons.classList.remove('hidden');
@@ -258,11 +382,11 @@ document.addEventListener('DOMContentLoaded', () => {
         watchfaceName.textContent = '跃界';
     });
 
-    deleteBtn.addEventListener('click', () => {
-        if (confirm('确定要删除这个表盘吗？')) {
-            document.querySelector('.watchface-wrapper').remove();
-        }
-    });
+    // deleteBtn.addEventListener('click', () => {
+    //     if (confirm('确定要删除这个表盘吗？')) {
+    //         document.querySelector('.watchface-wrapper').remove();
+    //     }
+    // });
 
     document.querySelectorAll('.dot').forEach(dot => {
         dot.addEventListener('click', () => {
@@ -330,9 +454,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // 添加重置按钮事件监听
+    const displayControl = document.getElementById('time-control');
     const timeControl = document.getElementById('time-control');
     const batteryControl = document.getElementById('battery-control');
     const stepControl = document.getElementById('step-control');
+
+    displayControl.querySelector('.reset-btn').addEventListener('click', () => {
+        batteryControl.querySelector(`input[value="default"]`).checked = true;
+    });
 
     timeControl.querySelector('.reset-btn').addEventListener('click', () => {
         // 重置checkbox状态
@@ -371,7 +500,7 @@ document.addEventListener('DOMContentLoaded', () => {
     valueAlert.className = 'app-tips';
     document.body.appendChild(valueAlert);
 
-    // 修改输入验证代码
+    // 输入验证值提示框
     inputs.forEach(input => {
         input.addEventListener('input', function () {
             const min = parseInt(this.min) || 0;
@@ -418,7 +547,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         element.addEventListener('mouseenter', () => {
             const elementRect = element.getBoundingClientRect();
-            const elementCenter = elementRect.left + (elementRect.width / 2);
 
             tooltip.textContent = titleText;
             tooltip.style.opacity = '1';
@@ -434,6 +562,42 @@ document.addEventListener('DOMContentLoaded', () => {
             tooltip.style.opacity = '0';
         });
     });
+
+    // function switchToAod() {
+    //     document.querySelector('input[value="aod"]').checked = true;
+    //     updateTime();
+    //     // console.log(styleNumberVariable);
+    //     applyStyle(styleNumberVariable)
+    // }
+
+    // aodTimeoutSelect.addEventListener('change', function () {
+    //     // 清除之前的计时器
+    //     clearTimeout(timeoutId);
+
+    //     // 获取选择的值（以秒为单位）
+    //     const selectedTimeout = parseInt(this.value, 10);
+
+    //     // 更新倒计时显示
+    //     updateCountdown(selectedTimeout);
+
+    //     // 设置新的计时器
+    //     timeoutId = setTimeout(function () {
+    //         // 在这里执行息屏操作
+    //         switchToAod()
+    //         // 重置计时器
+    //         clearTimeout(timeoutId);
+    //         updateCountdown(selectedTimeout);
+    //     }, selectedTimeout * 1000);
+
+    //     // 调用 applyStyle 函数，并传递 selectedTimeout 参数
+    //     applyStyle(selectedTimeout);
+    // });
+
+    // function updateCountdown(seconds) {
+    //     const minutes = Math.floor(seconds / 60);
+    //     const remainingSeconds = seconds % 60;
+    //     countdownElement.textContent = `${minutes}:${remainingSeconds < 10? '0' : ''}${remainingSeconds}`;
+    // }
 });
 
 const closeBtn = document.querySelector('#tips .close-btn')
