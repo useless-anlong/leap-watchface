@@ -564,43 +564,103 @@ document.addEventListener('DOMContentLoaded', () => {
             tooltip.style.opacity = '0';
         });
     });
-
-    // function switchToAod() {
-    //     document.querySelector('input[value="aod"]').checked = true;
-    //     updateTime();
-    //     // console.log(styleNumberVariable);
-    //     applyStyle(styleNumberVariable)
-    // }
-
-    // aodTimeoutSelect.addEventListener('change', function () {
-    //     // 清除之前的计时器
-    //     clearTimeout(timeoutId);
-
-    //     // 获取选择的值（以秒为单位）
-    //     const selectedTimeout = parseInt(this.value, 10);
-
-    //     // 更新倒计时显示
-    //     updateCountdown(selectedTimeout);
-
-    //     // 设置新的计时器
-    //     timeoutId = setTimeout(function () {
-    //         // 在这里执行息屏操作
-    //         switchToAod()
-    //         // 重置计时器
-    //         clearTimeout(timeoutId);
-    //         updateCountdown(selectedTimeout);
-    //     }, selectedTimeout * 1000);
-
-    //     // 调用 applyStyle 函数，并传递 selectedTimeout 参数
-    //     applyStyle(selectedTimeout);
-    // });
-
-    // function updateCountdown(seconds) {
-    //     const minutes = Math.floor(seconds / 60);
-    //     const remainingSeconds = seconds % 60;
-    //     countdownElement.textContent = `${minutes}:${remainingSeconds < 10? '0' : ''}${remainingSeconds}`;
-    // }
 });
+
+// 自动息屏相关变量
+let countdownTimer;
+let remainingTime = 0;
+let selectedTimeout = 5; // 默认5秒
+
+// 初始化
+function initDisplayControl() {
+    const aodTimeoutSelect = document.getElementById('aodTimeout');
+    const countdownElement = document.getElementById('countdown');
+    const displayModeInputs = document.getElementsByName('display-mode');
+
+    // 监听息屏时间选择
+    aodTimeoutSelect.addEventListener('change', (e) => {
+        selectedTimeout = parseInt(e.target.value);
+        resetCountdown();
+    });
+
+    // 监听显示模式切换
+    displayModeInputs.forEach(input => {
+        input.addEventListener('change', (e) => {
+            if (e.target.value === 'normal') {
+                startCountdown();
+                applyStyle(currentStyle);
+                watchfaceSwitch.style.zIndex = '-2';
+            } else {
+                stopCountdown();
+                const style = STYLE_ASSETS[currentStyle];
+                const wallpaper = watchFace.querySelector('.wallpaper');
+                const mask = watchFace.querySelector('.mask');
+                const stepContainer = document.querySelector('.step-container');
+                const dateContainer = document.querySelector('.date-container');
+
+                wallpaper.style.backgroundImage = `url('${style.aodBackground}')`;
+                mask.style.backgroundImage = `url('${style.aodMask}')`;
+                stepContainer.style.opacity = '0';
+                dateContainer.style.opacity = '0';
+                watchfaceSwitch.style.zIndex = '10';
+
+                // 更新时钟显示为息屏样式
+                updateAodTime();
+            }
+        });
+    });
+
+    startCountdown(); // 初始启动倒计时
+}
+
+// 开始倒计时
+function startCountdown() {
+    stopCountdown(); // 先清除之前的计时器
+    remainingTime = selectedTimeout;
+    updateCountdownDisplay();
+
+    countdownTimer = setInterval(() => {
+        remainingTime--;
+        updateCountdownDisplay();
+
+        if (remainingTime <= 0) {
+            // 时间到，自动切换到息屏模式
+            const aodRadio = document.querySelector('input[value="aod"]');
+            if (!aodRadio.checked) {
+                aodRadio.checked = true;
+                aodRadio.dispatchEvent(new Event('change')); // 触发change事件以应用息屏样式
+            }
+            stopCountdown();
+        }
+    }, 1000);
+}
+
+// 停止倒计时
+function stopCountdown() {
+    if (countdownTimer) {
+        clearInterval(countdownTimer);
+        countdownTimer = null;
+    }
+}
+
+// 重置倒计时
+function resetCountdown() {
+    const normalRadio = document.querySelector('input[value="normal"]');
+    if (normalRadio.checked) {
+        startCountdown();
+    }
+}
+
+// 更新倒计时显示
+function updateCountdownDisplay() {
+    const countdownElement = document.getElementById('countdown');
+    const minutes = Math.floor(remainingTime / 60);
+    const seconds = remainingTime % 60;
+    countdownElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+
+// 页面加载时初始化
+document.addEventListener('DOMContentLoaded', initDisplayControl);
 
 const closeBtn = document.querySelector('#tips .close-btn')
 const tipsContainer = document.getElementById('tips');
